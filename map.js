@@ -6,3 +6,5 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 L.marker([28.641874, -106.147054]).addTo(map);
+
+L.popup().setLatLng([28.642874, -106.147054]).setContent('Filho da puta agora sim entemdo').openOn(map);
