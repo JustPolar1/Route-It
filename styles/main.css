@@ -78,7 +78,7 @@ a {
 }
 
 .barra-lateral ul li {
-    padding: 15px;
+    padding: 15px 15px 15px 15px;
 }
 
 .barra-lateral ul li a {
