@@ -6,6 +6,12 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-image: url('/assets/ejemplo.png');
+    height: 200vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    
 }
 
 header {
@@ -14,7 +20,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px 20px;
 }
 
 .logo img {
