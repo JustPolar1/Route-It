@@ -47,3 +47,15 @@ color: #8F28F5;
 .login a:hover {
     color: #8F28F5;
 }
+.logo {
+    font-size: 24px;
+    margin: 0;
+    align-items: center;
+}
+
+.login-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
