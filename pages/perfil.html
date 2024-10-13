@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>inicio de sesión</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #fff;
+        }
+        .inicio {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+            width: 350px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color:#0041F5;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin: 15px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        input[type="password"]{
+            width: 100%;
+            padding: 12px;
+            margin: 15px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #0041F5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover{
+            background-color: #8F28F5;
+        }
+        .registrarse {
+            margin-top: 20px;
+            color: #0041F5;
+        }
+        .registrarse a{
+            color: #0041F5;
+            text-decoration: none;
+        }
+        .registrarse a:hover {
+            text-decoration: underline;
+        }
+        .contra {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #aaa;
+         }
+    </style>
+</head>
+<body>
+
+    <div class="inicio">
+        <h2>Inicio de Sesión</h2>
+        <p>Bienvenido(a) a Rutas UTCH</p>
+        <form action="/rutas" method="post">
+            <input type="text" id="username" name="username" placeholder="Usuario" required>
+            <input type="password" id="password" name="password" placeholder="Contraseña" required>
+            <button type="submit">Entrar</button>
+        </form>
+
+        <div class="registrarse">
+            <p style="color:#0041F5;">¿No tienes cuenta? <a href="/register">Regístrate aquí</a></p>
+        </div>
+    
+        <div class="contra">
+            <p><a href="/recuperar">¿Olvidaste tu contraseña?</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
