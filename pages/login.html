@@ -5,17 +5,18 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: white;
+            background-image: url('/assets/ejemplo.png');
             background-position: center;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
             margin: 0;
             color: #fff;
+            padding-top: 95px;
         }
         .inicio {
             background-color: rgba(0, 0, 0, 0.7);
+            vertical-align: center;
             padding: 40px;
             border-radius: 10px;
             box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
@@ -27,68 +28,73 @@
             font-size: 24px;
             color:#0041F5;
         }
-        input[type="text"] {
-            width: 100%;
-            padding: 12px;
-            margin: 15px 0;
-            border: none;
-            border-radius: 5px;
-        }
-        input[type="password"]{
-            width: 100%;
-            padding: 12px;
-            margin: 15px 0;
-            border: none;
-            border-radius: 5px;
-        }
+
+        input[type="text"],
+        input[type="password"],
         button {
             width: 100%;
             padding: 12px;
-            background-color: #0041F5;
-            color: white;
+            margin: 15px 0;
             border: none;
             border-radius: 5px;
+            box-sizing: border-box;
+        }
+        
+        button {
+            background-color: #0041F5;
+            color: white;
             cursor: pointer;
             font-size: 16px;
         }
+
+        a {
+            color: #9ab5ff;
+        }
+
         button:hover{
             background-color: #8F28F5;
         }
+        
         .registrarse {
             margin-top: 20px;
-            color: #0041F5;
         }
-        .registrarse a{
-            color: #0041F5;
-            text-decoration: none;
-        }
-        .registrarse a:hover {
-            text-decoration: underline;
-        }
+
         .contra {
             margin-top: 20px;
             font-size: 14px;
             color: #aaa;
          }
     </style>
+    <link href="\styles\main.css" rel="stylesheet">
 </head>
 <body>
+    <nav>
+        <div class="barra-superior">
+            <ul class="indices-izq">
+                <li></i></a></li>
+            </ul>
+            <h1><a href="index.html">UTCH Rutas</a></h1>
+            <ul class="indices-der">
+                <li><a href="login.html"><i class="fas fa-user"></i></a></li>
+            </ul>
+        </div>
+    </nav>
 
     <div class="inicio">
         <h2>Inicio de Sesión</h2>
         <p>Bienvenido(a) a Rutas UTCH</p>
-        <form action="/rutas" method="post">
+        <form action="index.html" method="post">
             <input type="text" id="username" name="username" placeholder="Usuario" required>
             <input type="password" id="password" name="password" placeholder="Contraseña" required>
             <button type="submit">Entrar</button>
         </form>
 
         <div class="registrarse">
-            <p style="color:#0041F5;">¿No tienes cuenta? <a href="/register">Regístrate aquí</a></p>
+            <p>¿No tienes cuenta? <a href="/register">Regístrate aquí</a></p>
         </div>
     
         <div class="contra">
-            <p><a href="/recuperar">¿Olvidaste tu contraseña?</a></p>
+            <p><a href="#">¿Olvidaste tu contraseña?</a></p>
         </div>
     </div>
 

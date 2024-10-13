@@ -1,48 +1,94 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <title>UTCH Rutas</title>
-        <link href="styles\main.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-        crossorigin=""/>
-        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-        crossorigin=""></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
-    <body>
-        <div class="barra-superior">
-            <ul class="indices-izq">
-                <li><a href="javascript:void(0);" id="toggle-btn"><i class="fas fa-bars"></i></a></li>
-            </ul>
-            <h1>UTCH Rutas</h1>
-            <ul class="indices-der">
-                <li><a href="perfil.html"><i class="fas fa-user"></i></a></li>
-            </ul>
-        </div>
+<html>
+    <p style="background-image: url('ejemplo.png;');">
+        <head>
+            <title>pagina principal</title>
+            <link href="\styles\estilos.css" rel="stylesheet">
+            <link href="\styles\main.css" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        </head>
+        <body>
+            <nav>
+                <div class="barra-superior">
+                    <ul class="indices-izq">
+                        <li></i></a></li>
+                    </ul>
+                    <h1><a href="#">UTCH Rutas</a></h1>
+                    <ul class="indices-der">
+                        <li><a href="login.html"><i class="fas fa-user"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="contenido">
+                <h2>RUTAS DE CAMIONES</h2>
+                <div class="rutas">
+                    <a href="map.html">Ruta Norte</a>
+                    <p>Esta ruta inicia en Alsuper Riberas y sus rutas son:</p>
+                    <li>Tecnológico frente a Bodega Aurrera</li>
+                    <li>Tecnológico frente a la Coca-Cola</li>
+                    <li>Av. los Arcos y Tecnológico</li>
+                    <li>San Miguel el Grande y Circuito Universitario</li>
+                    <p>La salida de esta ruta es a las 6:10AM, la llegada a la UTCH es las 6:55AM</p>
+                    <p>La ruta de regreso parte a las 2:00Pm</p>
+                    <p>Esta ruta tiene un costo de $15.00</p>
+                </div>
+
+
+            <div class="rutas">
+                <a href="map.html">Ruta Noroeste</a>
+                <p>Esta ruta inicia en Av.Prieto Luján y Av.Hidroeléctrica 
+                    y sus paradas son las siguientes:
+                </p>
+                <li>Av. Prieto Luján y Anthony Quinn.</li>
+                <li>Av. Prieto Luján y Av.Paseo del Real.</li>
+                <li>Av. Paseo del Real y Mina Casales.</li>
+                <li>Mina Progreso y Av. de las Industrias.</li>
+                <li>Elecktra de Av. de las industrias. (casi al llegar a Vialidad Los Nogales)</li>
+                <li>Av. de las Industrias y Dovstoyevski.</li>
+                <li>Av. Dovstoyevski y Sosa Vera.</li>
+                <li>Tecnológico y Miguel de Cervantes.</li>
+                <li>Tecnológico y Homero</li>
+                <li>Perif. de la Juventud y C. de la Educación.</li>
+                <li>C. Ignacio Rodríguez y Perif. de la Juventud.</li>
+                <li>C. Egipto y Perif. de la Juventud</li>
+                <p>La salida de esta ruta es a las 6:10Am, llegando a la UTCH a las 6:55Am</p>
+                <p>La ruta de regreso parte a las 2:00Pm</p>
+                <p>Esta ruta tiene un costo de $20.00 pesos mx en la ruta de ida hacia la UTCH
+                    y un costo de $12.00 pesos mx de regreso
+                </p>
+
+                </div>
+                <div class="rutas">
+                    <a href="map.html">Ruta Sur rumbo a la UTCH </a>
+                    <p>El primer camión de esta ruta comeinza en Alsuper Fuentes Mares</p>
+                    <p>El segundo camion de esat ruta comienza en frente de Terminal Sur J.P.II</p>
+                    <p>Ambas rutas comienzan su recorido a las 6:15Am, llegando a la UTCH a las 6:55Am
+                    </p>
+                    <p>Las paradas de estas rutas son:</p>
+                    <li>Av. Pacheco.</li>
+                    <li>C. Juarez.</li>
+                    <li>C. Neri Santos.</li>
+                    <li>Av. Independencia.</li>
+                    <p>Ambas paradas tiene un costo de $15.00 pesos mx</p>
+                    <p></p>
+
+                </div>
+
+                <div class="rutas">
+                    <a href="map.html">Ruta Sur de regreso de la UTCH</a>
+                    <p>Esta ruta de regreso de la UTCH comienza su trayecto en  la UTCH
+                        y sus paradas son:
+                    </p>
+                    <li>Periférico frente a Fashion mall.</li>
+                    <li>Glorieta tricentenario.</li>
+                    <li>Vialidad CH-P y Fuentes Mares.</li>
+                    <li>Fuentes Mares y Nva. España.</li>
+                    <li>Terminar Sur.</li>
+                    <li>Pacheco y Pedro Meoqui.</li>
+                    <p>Esta ruta comienza su trayecto a las 2:05Pm</p>
+                    <p>La ruta Sur tiene un costo de $20.00 pesos mx</p>
+                </div>
+            </div>
+        </body>
+    </html>
     
-        <div class="barra-lateral" id="sidebar">
-            <ul>
-                <h3>Rutas</h3>
-                <hr>
-                <li><a href="">Ruta Norte</a></li>
-                <li><a href="">Ruta Noroeste</a></li>
-                <li><a href="">Ruta Sureste</a></li>
-                <li><a href="">Ruta Suroeste</a></li>
-                <li><a href="">Ruta Lupita</a></li>
-            </ul>
-
-            <footer>
-                <ul>
-                    <li><a href="quejas.html">Quejas</a></li>
-                </ul>
-            </footer>
-        </div>
-
-        <div id="map"></div>
-
-        <script src="map.js"></script>
-        <script src="main.js"></script>
-    </body>
-</html>
