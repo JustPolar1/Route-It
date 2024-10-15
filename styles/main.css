@@ -16,7 +16,7 @@ body {
     right: 0;
     z-index: 15;
     border-radius: 0 0 10px 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra debajo de la barra */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.18); /* Sombra debajo de la barra */
 }
 
 .barra-superior a {
