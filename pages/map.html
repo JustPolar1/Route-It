@@ -21,19 +21,35 @@
                 </ul>
                 <h1><a href="index.html">UTCH Rutas</a></h1>
                 <ul class="indices-der">
-                    <li><a href="login.html"><i class="fas fa-user"></i></a></li>
-                </ul>
+                    <li id="usuario">
+                        <a href="javascript:void(0);"><i class="fas fa-user"></i></a>
+                        <div class="menu_desplegable" id="menu">
+                            <ul>
+                                <li><a href="login.html">Perfil</a></li>
+                                <hr>
+                                <li><a href="#">Idioma</a></li>
+                                <hr>
+                                <li><a href="#">Configuración</a></li>
+                                <hr>
+                                <li><a href="#">Cerrar Sesión</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>     
             </div>
         </nav>
     
         <div class="barra-lateral" id="sidebar">
             <ul>
                 <h3>Rutas</h3>
-                <hr>
                 <li><a href="">Ruta Norte</a></li>
+                <hr>
                 <li><a href="">Ruta Noroeste</a></li>
+                <hr>
                 <li><a href="">Ruta Sureste</a></li>
+                <hr>
                 <li><a href="">Ruta Suroeste</a></li>
+                <hr>
                 <li><a href="">Ruta Lupita</a></li>
             </ul>
 
@@ -47,6 +63,6 @@
         <div id="map"></div>
 
         <script src="\scripts\map.js"></script>
-        <script src="\scripts\\main.js"></script>
+        <script src="\scripts\main.js"></script>
     </body>
 </html>

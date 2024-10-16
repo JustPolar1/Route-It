@@ -49,6 +49,7 @@ a {
 
 .barra-lateral ul li a {
     display: block;
+    text-decoration: none;
 }
 
 .barra-lateral footer li {
