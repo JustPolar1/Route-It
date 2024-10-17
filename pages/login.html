@@ -33,6 +33,7 @@
             margin-bottom: 20px;
             font-size: 24px;
             color:#0041F5;
+            text-shadow: 2px 2px 5px #3f3f3f;
         }
 
         input[type="text"],
@@ -81,7 +82,20 @@
             </ul>
             <h1><a href="index.html">UTCH Rutas</a></h1>
             <ul class="indices-der">
-                <li><a href="login.html"><i class="fas fa-user"></i></a></li>
+                <li id="usuario">
+                    <a href="javascript:void(0);"><i class="fas fa-user"></i></a>
+                    <div class="menu_desplegable" id="menu">
+                        <ul>
+                            <li><a href="login.html">Perfil</a></li>
+                            <hr>
+                            <li><a href="#" id="languageSwitcher">Idioma</a></li>
+                            <hr>
+                            <li><a href="#">Configuración</a></li>
+                            <hr>
+                            <li><a href="#">Cerrar Sesión</a></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
         </div>
     </nav>

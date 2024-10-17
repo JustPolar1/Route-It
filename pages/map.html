@@ -21,22 +21,46 @@
                 </ul>
                 <h1><a href="index.html">UTCH Rutas</a></h1>
                 <ul class="indices-der">
-                    <li><a href="login.html"><i class="fas fa-user"></i></a></li>
-                </ul>
+                    <li id="usuario">
+                        <a href="javascript:void(0);"><i class="fas fa-user"></i></a>
+                        <div class="menu_desplegable" id="menu">
+                            <ul>
+                                <li>
+                                    <a href="login.html"><button class="pildora" type="button">Perfil</button></a>
+                                </li>
+                                <li>
+                                    <button class="pildora">Cambiar idioma</button>
+                                </li>
+                                <li>
+                                    <button class="pildora">Configuración</button>
+                                </li>
+                                <li>
+                                    <button class="pildora">Cerrar sesión</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>     
             </div>
         </nav>
     
         <div class="barra-lateral" id="sidebar">
             <ul>
-                <h3>Rutas</h3>
-                <hr>
-                <li><a href="">Ruta Norte</a></li>
-                <li><a href="">Ruta Noroeste</a></li>
-                <li><a href="">Ruta Sureste</a></li>
-                <li><a href="">Ruta Suroeste</a></li>
-                <li><a href="">Ruta Lupita</a></li>
-            </ul>
-
+                <li>
+                    <h3>Rutas</h3>
+                </li>
+                <li>
+                    <button class="pildora">Ruta Norte</button>
+                </li>
+                <li>
+                    <button class="pildora">Ruta Noroeste</button>
+                </li>
+                <li>
+                    <button class="pildora">Ruta Sureste</button>
+                </li>
+                <li>
+                    <button class="pildora">Ruta Suroeste</button>
+                </li>
             <footer>
                 <ul>
                     <li><a href="quejas.html">Quejas</a></li>
@@ -47,6 +71,6 @@
         <div id="map"></div>
 
         <script src="\scripts\map.js"></script>
-        <script src="\scripts\\main.js"></script>
+        <script src="\scripts\main.js"></script>
     </body>
 </html>

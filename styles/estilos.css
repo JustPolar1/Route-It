@@ -1,13 +1,14 @@
 body {
     top: 53px;
     position: relative;
+    
 }
 
 .logo img {
     width: 50px;
 }
 
-h1 {
+h1 {    
     flex: 1;
     text-align: center;
 }
