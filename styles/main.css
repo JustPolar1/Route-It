@@ -51,7 +51,7 @@ body {
     border-color: rgb(193, 193, 193);
     border-width: 1px;
     background-color: rgba(0, 0, 0, 0.429);
-    display: none; 
+    display: none; /*Cambiar a flex para mostrar en desarrollo*/
     position: absolute;
     top: 100%;
     margin-right: 20px;
@@ -84,6 +84,13 @@ hr {
     display: block;
 }
 
-.menu_desplegable ul li:hover {
+.pildora {
+    margin: 1px;
     background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.pildora:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);
 }
