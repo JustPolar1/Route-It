@@ -17,3 +17,10 @@ window.addEventListener('click', function(event) {
         userMenu.style.display = 'none'; 
     }
 });
+
+const languageSwitcher = document.getElementById('languageSwitcher');
+
+userButton.addEventListener('click', function (event){
+    event.preventDefault
+    console.log('idioma cambiado');
+});
