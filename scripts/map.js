@@ -11,4 +11,4 @@ L.control.zoom({
 
 L.marker([28.641874, -106.147054]).addTo(map);
 
-L.popup().setLatLng([28.642874, -106.147054]).setContent('Chupa meu pau').openOn(map);
+L.popup().setLatLng([28.642874, -106.147054]).setContent('UTCh').openOn(map);
