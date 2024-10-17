@@ -20,12 +20,13 @@ a {
     background-color: rgba(0, 0, 0, 0.429);
     width: 150px;
     position: fixed;
-    top: 0;
+    top: 60px; /* Ajuste según la altura de tu barra superior */
     left: 0;
-    height: 100vh;
-    padding-top: 70px;
+    height: calc(100vh - 70px); /* Restar la altura de la barra superior */
+    padding-top: 10px;
     z-index: 10;
     transition: transform 0.3s ease-in-out;
+    overflow-y: auto;
 }
 
 .hidden {
@@ -39,22 +40,36 @@ a {
 }
 
 .barra-lateral ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .barra-lateral ul li {
-    padding: 15px 15px 15px 15px;
+    width: 85%;
+    align-content: center;
+    padding: 1px;
 }
 
 .barra-lateral ul li a {
-    display: block;
     text-decoration: none;
 }
 
-.barra-lateral footer li {
-    position: fixed;
-    bottom: 0;
-    width: 0; 
-    padding-bottom: 100px;
+hr {
+    width: 80%;
+}
+
+.barra-lateral footer ul {
+    padding: 25px 0;
+}
+
+.barra-lateral footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
 }
