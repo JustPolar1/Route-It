@@ -1,5 +1,62 @@
  {
    "en" :{
-        
+      "titulo2":"UTCH Routes",
+      "profile-link":"Profile",
+      "selectoridioma":"lenguage",
+      "link-configuracion":"settings",
+      "link-cerrar-sesion":"close session",
+      "rutas-camiones":"BUS ROUTES",               
+    
+      "ruta-norte":"North route",
+      "ruta-norte-descripcion":"This bus route start in Alsuper Riberas and stops in:",
+      "rutan-parada1":"Tecnológico in front of Bodega Aurrera",
+      "rutan-parada2":"Tecnológico in front of Coca-Cola",
+      "rutan-parada3":"Av. los Arcos & Tecnológico",
+      "rutan-parada4":"San Miguel el Grande & Circuito Universitario",
+      "rutan-salida":"The Bus starts the journey at 6:10AM, arrives at UTCH at 6:55AM",
+      "rutan-regreso":"The return bus leaves at 2:00PM",
+      "rutan-costo":"This bus route has a cost of $15.00",
+
+      "ruta-noreste":"North-west route",
+      "ruta-noreste-desc":"This bus route start on Av.Prieto Luján & Av.Hidroeléctrica & it's stops are the following:",
+      "rutane-parada1":"Ave. Prieto Luján &  St. Anthony Quinn.",
+      "rutane-parada2":"Ave. Prieto Luján & Ave.Paseo del Real.",
+      "rutane-parada3":"Ave. Paseo del Real & St.Mina Casales.",
+      "rutane-parada4":"St.Mina Progreso y Ave. de las Industrias.",
+      "rutane-parada5":"Elecktra from Ave. de las industrias. (almost upon reaching Vialidad Los Nogales)",
+      "rutane-parada6":"Ave. de las Industrias & Ave.Dovstoyevski.",
+      "rutane-parada7":"Ave. Dovstoyevski & St.Sosa Vera.",
+      "rutane-parada8":"Ave.Tecnológico & St.Miguel de Cervantes.",
+      "rutane-parada9":"Ave.Tecnológico & Homero<",
+      "rutane-parada10":"Perif. de la Juventud y C. de la Educación.",
+      "rutane-parada11":"C. Ignacio Rodríguez y Perif. de la Juventud.",
+      "rutane-parada12":"C. Egipto y Perif. de la Juventud",
+      "rutane-salida":"La salida de esta ruta es a las 6:10Am, llegando a la UTCH a las 6:55Am",
+      "rutane-regreso":"La ruta de regreso parte a las 2:00Pm",
+      "rutane-precio":"Esta ruta tiene un costo de $20.00 pesos mx en la ruta de ida hacia la UTCH y un costo de $12.00 pesos mx de regreso",
+  
+   
+      "ruta-sur":"Ruta Sur rumbo a la UTCH",
+      "sur-info1":"El primer camión de esta ruta comeinza en Alsuper Fuentes Mares",
+      "sur-info2":"El segundo camion de esta ruta comienza en frente de Terminal Sur J.P.II",
+      "rutasur-desc":"Ambas rutas comienzan su recorido a las 6:15Am, llegando a la UTCH a las 6:55Am",
+      "rutasur-desc2":"Las paradas de estas rutas son:",
+      "rutasur-parada1":"Av. Pacheco.",
+      "rutasur-parada2":"C. Juarez.",
+      "rutasur-parada3":"C. Neri Santos.",
+      "rutasur-parada4":"Av. Independencia.",
+      "rutasur-costo":"Ambas paradas tiene un costo de $15.00 pesos mx",
+
+  
+      "rutasur-regreso":"Ruta Sur de regreso de la UTCH",
+      "rutasur-reg-espc":"Esta ruta de regreso de la UTCH comienza su trayecto en  la UTCH y sus paradas son:",
+      "rutasur-reg-parada1":"Periférico frente a Fashion mall.",
+      "rutasur-reg-parada2":"Glorieta tricentenario.",
+      "rutasur-reg-parada3":"Vialidad CH-P y Fuentes Mares.",
+      "rutasur-reg-parada4":"Fuentes Mares y Nva. España.",
+      "rutasur-reg-parada5":"Terminar Sur.",
+      "rutasur-reg-parada6":"Pacheco y Pedro Meoqui.",
+      "rutasur-inicio":"Esta ruta comienza su trayecto a las 2:05Pm",
+      "rutasur-costo-reg":"La ruta Sur tiene un costo de $20.00 pesos mx"
     }
 }
