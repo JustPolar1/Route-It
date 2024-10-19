@@ -4,7 +4,6 @@ body {
 }
 
 .barra-superior {
-
     display: flex;
     align-items: center;
     background-image: linear-gradient(90deg, #0900ba 0%, #00d4ff 100%);
@@ -58,24 +57,20 @@ body {
     right: 0;
     z-index: 100; 
     border-radius: 10px;
+    padding: 0;
 }
 
 .menu_desplegable ul {
     list-style: none; 
-    padding: 10px;
+    padding: 10px 15px;
     margin: 0;
     display: flex;
     flex-direction: column; 
 }
 
-hr {
-    width: 80%;
-    margin: 0 auto;
-    border: solid 1px rgba(193, 193, 193, 0.548)
-}
-
 .menu_desplegable ul li {
-    padding: 10px 15px; 
+    margin: 0;
+    padding: 1px; 
 }
 
 .menu_desplegable ul li a {
@@ -85,12 +80,15 @@ hr {
 }
 
 .pildora {
-    margin: 1px;
+    color: white;
+    width: 100%;
+    padding: 15px 25px;
+    border: none;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
 }
 
 .pildora:hover {
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.08);
 }
