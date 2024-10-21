@@ -63,7 +63,7 @@ function loadLanguage(language) {
 function updateContent(language, translations) {
     if (language === 'en') {
         const tituloElement = document.getElementById('titulo2');
-        if (tituloElement) tituloElement.textContent = translations.tituloElement;
+        if (tituloElement) tituloElement.textContent = translations[language].tituloprincipal; // asi es como se debe hacer para que aparezca el contenido
 
         const rutaNorteElement = document.getElementById('ruta_norte');
         if (rutaNorteElement) rutaNorteElement.textContent = translations.ruta_norte;
