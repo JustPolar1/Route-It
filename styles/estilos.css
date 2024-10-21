@@ -1,3 +1,5 @@
+/*Diseño de la pantalla principal*/
+
 body {
     top: 53px;
     position: relative;
@@ -40,4 +42,76 @@ h1 {
     padding: 5px 32px 10px 40px;
     border-radius: 12px;
 }
+
+/* Estilos de inicio de sesión*/
+
+#lokeseaxd {
+    font-family: Arial, sans-serif;
+    background-image: url('/assets/ejemplo.png');
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: #fff;
+    padding-top: 95px;
+}
+.inicio {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-style: solid;
+    border-color: rgb(193, 193, 193);
+    border-width: 1px;
+    background-color: rgba(0, 0, 0, 0.429);
+    vertical-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    text-align: center;
+}
+#titulo {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color:#0041F5;
+    text-shadow: 2px 2px 5px #3f3f3f;
+}
+
+input[type="text"],
+input[type="password"], 
+input[type="email"],
+#baton {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#baton {
+    background-color: #0041F5;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+a {
+    color: #9ab5ff;
+}
+
+#baton:hover{
+    background-color: #8F28F5;
+}
+
+.registrarse {
+    margin-top: 20px;
+}
+
+.contra {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+ }
+
 
