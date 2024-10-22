@@ -68,47 +68,47 @@ function updateContent(language, translations) {
         const titulo2Element = document.getElementById('titulo2');
         if (titulo2Element) titulo2Element.textContent = translations[language].titulo2;
 
-        const profileElement = document.getElementById('profile-link');
-        if (profileElement) profileElement.textContent = translations[language].profile-link;
+        const profileElement = document.getElementById('profile_link');
+        if (profileElement) profileElement.textContent = translations[language].profile_link;
 
         const configElement = document.getElementById('selectoridioma');
         if (configElement) configElement.textContent = translations[language].selectoridioma;
 
-        const selectidiomaElement = document.getElementById('link-configuracion');
-        if (selectidiomaElement) selectidiomaElement.textContent = translations[language].link-configuracion;
+        const selectidiomaElement = document.getElementById('link_configuracion');
+        if (selectidiomaElement) selectidiomaElement.textContent = translations[language].link_configuracion;
 
-        const logoutsesionElement = document.getElementById('link-cerrar-sesion');
-        if (logoutsesionElement) logoutsesionElement.textContent = translations[language].link-cerrar-sesion;
+        const logoutsesionElement = document.getElementById('link_cerrar_sesion');
+        if (logoutsesionElement) logoutsesionElement.textContent = translations[language].link_cerrar_sesion;
 
-        const BusroutesElement = document.getElementById('rutas-camiones');
-        if (BusroutesElement) BusroutesElement.textContent = translations[language].rutas-camiones;
+        const BusroutesElement = document.getElementById('rutas_camiones');
+        if (BusroutesElement) BusroutesElement.textContent = translations[language].rutas_camiones;
 
         const rutaNorteElement = document.getElementById('ruta_norte');
         if (rutaNorteElement) rutaNorteElement.textContent = translations[language].ruta_norte;
 
-        const rutaNortdesElement = document.getElementById('ruta-norte-descripcion');
-        if (rutaNortdesElement) rutaNortdesElement.textContent = translations[language].ruta-norte-descripcion;
+        const rutaNortdesElement = document.getElementById('ruta_norte_descripcion');
+        if (rutaNortdesElement) rutaNortdesElement.textContent = translations[language].ruta_norte_descripcion;
 
-        const rutaNp1Element = document.getElementById('rutan-parada1');
-        if (rutaNp1Element) rutaNp1Element .textContent = translations[language].rutan-parada1;
+        const rutaNp1Element = document.getElementById('rutan_parada1');
+        if (rutaNp1Element) rutaNp1Element .textContent = translations[language].rutan_parada1;
 
-        const rutaNp2Element = document.getElementById('rutan-parada2');
-        if (rutaNp2Element) rutaNp2Element.textContent = translations[language].rutan-parada2;
+        const rutaNp2Element = document.getElementById('rutan_parada2');
+        if (rutaNp2Element) rutaNp2Element.textContent = translations[language].rutan_parada2;
 
         const rutaNp3Element = document.getElementById('rutan-parada3');
-        if (rutaNp3Element) rutaNp3Element.textContent = translations[language].rutan-parada3;
+        if (rutaNp3Element) rutaNp3Element.textContent = translations[language].rutan_parada3;
 
-        const rutaNp4Element = document.getElementById('rutan-parada4');
-        if (rutaNp4Element) rutaNp4Element.textContent = translations[language].rutan-parada4;
+        const rutaNp4Element = document.getElementById('rutan_parada4');
+        if (rutaNp4Element) rutaNp4Element.textContent = translations[language].rutan_parada4;
 
-        const rutaNSElement = document.getElementById('rutan-salida');
-        if (rutaNSElement) rutaNSElement.textContent = translations[language].rutan-salida;
+        const rutaNSElement = document.getElementById('rutan_salida');
+        if (rutaNSElement) rutaNSElement.textContent = translations[language].rutan_salida;
 
-        const rutaNrgElement = document.getElementById('rutan-regreso');
-        if (rutaNrgElement) rutaNrgElement.textContent = translations[language].rutan-regreso;
+        const rutaNrgElement = document.getElementById('rutan_regreso');
+        if (rutaNrgElement) rutaNrgElement.textContent = translations[language].rutan_regreso;
 
-        const rutaNcostElement = document.getElementById('rutan-costo');
-        if (rutaNcostElement) rutaNcostElement.textContent = translations[language].rutan-costo;
+        const rutaNcostElement = document.getElementById('rutan_costo');
+        if (rutaNcostElement) rutaNcostElement.textContent = translations[language].rutan_costo;
         
         // Agrega más elementos aquí según sea necesario
     } 
