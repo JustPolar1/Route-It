@@ -23,11 +23,6 @@ window.addEventListener('click', function(event) {
     }
 });
 
-userButton.addEventListener('click', function (event){
-    event.preventDefault(); 
-    console.log('idioma cambiado');
-});
-
 const savedLanguage = localStorage.getItem('language') || 'es'; // Obtener el idioma guardado (por defecto español)
 
 // Configurar el selector de idioma
