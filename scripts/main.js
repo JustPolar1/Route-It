@@ -62,22 +62,55 @@ function loadLanguage(language) {
 // Función para actualizar el contenido de la página
 function updateContent(language, translations) {
     if (language === 'en') {
-        const tituloElement = document.getElementById('titulo2');
+        const tituloElement = document.getElementById('tituloprincipal');
         if (tituloElement) tituloElement.textContent = translations[language].tituloprincipal; // asi es como se debe hacer para que aparezca el contenido
 
+        const titulo2Element = document.getElementById('titulo2');
+        if (titulo2Element) titulo2Element.textContent = translations[language].titulo2;
+
+        const profileElement = document.getElementById('profile-link');
+        if (profileElement) profileElement.textContent = translations[language].profile-link;
+
+        const configElement = document.getElementById('selectoridioma');
+        if (configElement) configElement.textContent = translations[language].selectoridioma;
+
+        const selectidiomaElement = document.getElementById('link-configuracion');
+        if (selectidiomaElement) selectidiomaElement.textContent = translations[language].link-configuracion;
+
+        const logoutsesionElement = document.getElementById('link-cerrar-sesion');
+        if (logoutsesionElement) logoutsesionElement.textContent = translations[language].link-cerrar-sesion;
+
+        const BusroutesElement = document.getElementById('rutas-camiones');
+        if (BusroutesElement) BusroutesElement.textContent = translations[language].rutas-camiones;
+
         const rutaNorteElement = document.getElementById('ruta_norte');
-        if (rutaNorteElement) rutaNorteElement.textContent = translations.ruta_norte;
+        if (rutaNorteElement) rutaNorteElement.textContent = translations[language].ruta_norte;
 
+        const rutaNortdesElement = document.getElementById('ruta-norte-descripcion');
+        if (rutaNortdesElement) rutaNortdesElement.textContent = translations[language].ruta-norte-descripcion;
+
+        const rutaNp1Element = document.getElementById('rutan-parada1');
+        if (rutaNp1Element) rutaNp1Element .textContent = translations[language].rutan-parada1;
+
+        const rutaNp2Element = document.getElementById('rutan-parada2');
+        if (rutaNp2Element) rutaNp2Element.textContent = translations[language].rutan-parada2;
+
+        const rutaNp3Element = document.getElementById('rutan-parada3');
+        if (rutaNp3Element) rutaNp3Element.textContent = translations[language].rutan-parada3;
+
+        const rutaNp4Element = document.getElementById('rutan-parada4');
+        if (rutaNp4Element) rutaNp4Element.textContent = translations[language].rutan-parada4;
+
+        const rutaNSElement = document.getElementById('rutan-salida');
+        if (rutaNSElement) rutaNSElement.textContent = translations[language].rutan-salida;
+
+        const rutaNrgElement = document.getElementById('rutan-regreso');
+        if (rutaNrgElement) rutaNrgElement.textContent = translations[language].rutan-regreso;
+
+        const rutaNcostElement = document.getElementById('rutan-costo');
+        if (rutaNcostElement) rutaNcostElement.textContent = translations[language].rutan-costo;
+        
         // Agrega más elementos aquí según sea necesario
-    } else {
-        // Contenido en español por defecto
-        const tituloElement = document.getElementById('titulo2');
-        if (tituloElement) tituloElement.textContent = "Página Principal"; // Ejemplo de texto en español
-
-        const rutaNorteElement = document.getElementById('ruta_norte');
-        if (rutaNorteElement) rutaNorteElement.textContent = "Ruta Norte"; // Ejemplo de texto en español
-
-        // Agrega más elementos aquí según sea necesario
-    }
+    } 
 }
 });
