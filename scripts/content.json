@@ -6,7 +6,8 @@
       "selectoridioma":"lenguage",
       "link_configuracion":"settings",
       "link_cerrar-sesion":"log out",
-      "rutas_camiones":"BUS ROUTES",               
+      "rutas_camiones":"BUS ROUTES",
+
       "ruta_norte":"North route",
       "ruta_norte-descripcion":"This bus route start in Alsuper Riberas and stops in:",
       "rutan_parada1":"Tecnológico in front of Bodega Aurrera",
@@ -16,6 +17,7 @@
       "rutan_salida":"The Bus starts the journey at 6:10AM, arrives at UTCH at 6:55AM",
       "rutan_regreso":"The return bus leaves at 2:00PM",
       "rutan_costo":"This bus route has a cost of $15.00",
+      
       "ruta_noroeste":"North-west route",
       "ruta_noroeste_desc":"This bus route start on Av.Prieto Luján & Av.Hidroeléctrica & it's stops are the following:",
       "rutanoe_parada1":"Ave. Prieto Luján &  St. Anthony Quinn.",
@@ -33,7 +35,8 @@
       "rutanoe_salida":"La salida de esta ruta es a las 6:10Am, llegando a la UTCH a las 6:55Am",
       "rutanoe_regreso":"La ruta de regreso parte a las 2:00Pm",
       "rutanoe_precio":"Esta ruta tiene un costo de $20.00 pesos mx en la ruta de ida hacia la UTCH y un costo de $12.00 pesos mx de regreso",
-      "ruta_sur":"Ruta Sur rumbo a la UTCH",
+      
+      "ruta_sur":"South route",
       "sur_info1":"El primer camión de esta ruta comeinza en Alsuper Fuentes Mares",
       "sur_info2":"El segundo camion de esta ruta comienza en frente de Terminal Sur J.P.II",
       "rutasur_desc":"Ambas rutas comienzan su recorido a las 6:15Am, llegando a la UTCH a las 6:55Am",
