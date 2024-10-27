@@ -16,9 +16,18 @@ utch_marker.openPopup();
 var marcadores = [];
 
 var routingControl;
-var ruta_actual; // Para saber los waypoints que se están usando actualmente
+var ruta_actual = []; // Para saber los waypoints que se están usando actualmente
 
-var sur_ruta = [
+var ruta_sur_ida = [
+    // Aún faltan paradas de camión, aún no sé si voy a marcar TODAS
+    L.latLng(28.62086575203181, -106.03171545445987), // Alsuper Fuentes Mares. Inicio
+    L.latLng(28.626852230301544, -106.03041384077241),
+    L.latLng(28.645222841283974, -106.06899465553275),
+    L.latLng(28.639714254961497, -106.07456167121934), // Neri Santos
+    L.latLng(28.642632, -106.146909) // UTCh, punto final
+]
+
+var ruta_sur_regreso = [
     L.latLng(28.64215, -106.147051), // Punto de inicio, UTCh
     L.latLng(28.623221582883048, -106.11379527074813), // Fashion Mall
     L.latLng(28.601764, -106.102537), // Glorieta
@@ -38,14 +47,19 @@ botones_rutas.forEach(boton => {
                 btn.disabled = false;
             }
         });
+        mostrar_ruta(ruta_actual);
     })
 });
 
 
-function sur_regreso(){
+function mostrar_ruta(ruta){
+    if (routingControl){
+        map.removeControl(routingControl);
+    }
+
     // Configuración del control de enrutamiento
     routingControl = L.Routing.control({
-        waypoints: sur_ruta,
+        waypoints: ruta,
         draggableWaypoints: false,
         routeWhileDragging: false,
         lineOptions: {
@@ -56,7 +70,7 @@ function sur_regreso(){
 
     map.removeLayer(utch_marker);
 
-    marcadores.push(L.marker([28.64215, -106.147051]).addTo(map).bindPopup("Inicio").openPopup())
+    routingControl._container.style.display = "none";
 }
 /*
 function eliminar(){
