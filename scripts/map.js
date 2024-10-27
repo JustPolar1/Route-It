@@ -16,19 +16,33 @@ utch_marker.openPopup();
 var marcadores = [];
 
 var routingControl;
+var ruta_actual; // Para saber los waypoints que se están usando actualmente
 
 var sur_ruta = [
-    L.latLng(28.635263, -106.044502), // Punto de inicio
-    L.latLng(28.6266899,-106.0314196), // El primer punto es el inicio, los demás son paradas
-    L.latLng(28.620831, -106.029129),
-    L.latLng(28.621774, -106.046270), 
-    L.latLng(28.602196,-106.101084), 
-    L.latLng(28.6015419,-106.1026966),
-    L.latLng(28.647509, -106.133202), // El último punto es la parada final
-    L.latLng(28.642570, -106.146970) // Destino final, UTCh
+    L.latLng(28.64215, -106.147051), // Punto de inicio, UTCh
+    L.latLng(28.623221582883048, -106.11379527074813), // Fashion Mall
+    L.latLng(28.601764, -106.102537), // Glorieta
+    L.latLng(28.619668405494654, -106.05115941991217), // Fuentes Mares Vialidad CH-P
+    L.latLng(28.620905095639092, -106.03170352277296), // Fuentes Mares, Nueva España
+    L.latLng(28.62689755522281, -106.03041925721031), // Terminal Sur
+    L.latLng(28.636038471134963, -106.04539948224136) // Pacheco y Pedro Meoqui
 ]
 
-function sur(){
+// Apartado para event listener de los botones
+const botones_rutas = document.getElementById('sidebar').querySelectorAll('button');
+botones_rutas.forEach(boton => {
+    boton.addEventListener('click', () => {
+        boton.disabled = true;
+        botones_rutas.forEach(btn => {
+            if (btn !== boton) {
+                btn.disabled = false;
+            }
+        });
+    })
+});
+
+
+function sur_regreso(){
     // Configuración del control de enrutamiento
     routingControl = L.Routing.control({
         waypoints: sur_ruta,
@@ -40,11 +54,11 @@ function sur(){
         show: false
     }).addTo(map);
 
-    marcadores.push(L.marker([28.642570, -106.146970]).addTo(map).bindPopup("UTCh").openPopup())
+    map.removeLayer(utch_marker);
 
-    marcadores.push(L.marker([28.635263, -106.044502]).addTo(map).bindPopup("Inicio").openPopup())
+    marcadores.push(L.marker([28.64215, -106.147051]).addTo(map).bindPopup("Inicio").openPopup())
 }
-
+/*
 function eliminar(){
     routingControl.setWaypoints([]);
     marcadores.forEach(element => {
@@ -53,3 +67,4 @@ function eliminar(){
     utch_marker.openPopup();
 
 }
+*/
