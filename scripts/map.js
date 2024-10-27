@@ -18,6 +18,12 @@ var marcadores = [];
 var routingControl;
 var ruta_actual = []; // Para saber los waypoints que se están usando actualmente
 
+var ruta_norte_1 = [
+    L.latLng(28.76468937404245, -106.16938378182661), // Alsuper Riberas
+    L.latLng(28.70258687986386, -106.14192785268213), // Circuito universitario y Miguel el Grande
+    L.latLng(28.642632, -106.146909) // UTCh, punto final
+]
+
 var ruta_norte_2 = [
     L.latLng(28.74224416257849, -106.13791303769614), // Inicio en Prieto Luján
     L.latLng(28.744635839841038, -106.13287504610011), // Anthony Quinn
@@ -30,7 +36,6 @@ var ruta_norte_2 = [
     L.latLng(28.7265705711264, -106.12033780365736), // Dostoyevski y Sosa Vera
     L.latLng(28.642632, -106.146909) // UTCh, punto final
 ]
-
 
 var ruta_sur_ida = [
     // Aún faltan paradas de camión, aún no sé si voy a marcar TODAS
