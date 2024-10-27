@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>UTCH Rutas</title>
+        <title id="titulo2">UTCH Rutas</title>
         <link href="\styles\main.css" rel="stylesheet">
         <link href="\styles\map.css" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -19,26 +19,26 @@
                 <ul class="indices-izq">
                     <li><a href="javascript:void(0);" id="toggle-btn"><i class="fas fa-bars"></i></a></li>
                 </ul>
-                <h1><a href="index.html">UTCH Rutas</a></h1>
+                <h1><a href="index.html" id="titulo2">UTCH Rutas</a></h1>
                 <ul class="indices-der">
                     <li id="usuario">
                         <a href="javascript:void(0);"><i class="fas fa-user"></i></a>
                         <div class="menu_desplegable" id="menu">
                             <ul>
                                 <li>
-                                    <a href="login.html"><button class="pildora" type="button">Perfil</button></a>
+                                    <a href="login.html"><button class="pildora" type="button" id="profile_link">Perfil</button></a>
                                 </li>
                                 <li>
-                                    <select class="pildora" ="languageSwitcher">Cambiar idioma
-                                        <option value="es">Español</option>
-                                        <option value="en">Inglés</option>
+                                    <select class="pildora" id="languageSwitcher">Cambiar idioma
+                                        <option value="es" id="esp">Español</option>
+                                        <option value="en" id="eng">Inglés</option>
                                     </select>
                                 </li>
                                 <li>
-                                    <button class="pildora">Configuración</button>
+                                    <button class="pildora" id="Link_configuracion">Configuración</button>
                                 </li>
                                 <li>
-                                    <button class="pildora">Cerrar sesión</button>
+                                    <button class="pildora" id="Link_cerrar_sesion">Cerrar sesión</button>
                                 </li>
                             </ul>
                         </div>
@@ -50,23 +50,23 @@
         <div class="barra-lateral" id="sidebar">
             <ul>
                 <li>
-                    <h3>Rutas</h3>
+                    <h3 id="rutas">Rutas</h3>
                 </li>
                 <li>
-                    <button class="pildora">Ruta Norte</button>
+                    <button class="pildora" id="ruta_norte">Ruta Norte</button>
                 </li>
                 <li>
-                    <button class="pildora">Ruta Noroeste</button>
+                    <button class="pildora" id="ruta_noroeste">Ruta Noroeste</button>
                 </li>
                 <li>
-                    <button class="pildora">Ruta Sureste</button>
+                    <button class="pildora" id="ruta_sur">Ruta Sureste</button>
                 </li>
                 <li>
-                    <button class="pildora">Ruta Suroeste</button>
+                    <button class="pildora" id="ruta_sur2">Ruta Suroeste</button>
                 </li>
             <footer>
                 <ul>
-                    <li><a href="quejas.html">Quejas</a></li>
+                    <li><a href="quejas.html" id="quejas">Quejas</a></li>
                 </ul>
             </footer>
         </div>
@@ -75,5 +75,6 @@
 
         <script src="\scripts\map.js"></script>
         <script src="\scripts\main.js"></script>
+        <script src="\scripts\translate.js"></script>
     </body>
 </html>
