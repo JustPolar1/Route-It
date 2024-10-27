@@ -73,7 +73,3 @@ hr {
     width: 100%;
     align-items: center;
 }
-
-.leaflet-routing-container {
-    display: none;
-}

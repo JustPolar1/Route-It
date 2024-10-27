@@ -18,6 +18,20 @@ var marcadores = [];
 var routingControl;
 var ruta_actual = []; // Para saber los waypoints que se están usando actualmente
 
+var ruta_norte_2 = [
+    L.latLng(28.74224416257849, -106.13791303769614), // Inicio en Prieto Luján
+    L.latLng(28.744635839841038, -106.13287504610011), // Anthony Quinn
+    L.latLng(28.74662489997584, -106.12841291189626), // Paseo real
+    L.latLng(28.737653981907993, -106.12332086962223), // Mina Casale
+    L.latLng(28.738884097381824, -106.12042303329815), // Mina progreso
+    L.latLng(28.73959033440291, -106.11832342831346), // Mina progreso y Av. Industrial
+    L.latLng(28.73366447915171, -106.11529624207145), // Elektra Av. Industrias 
+    L.latLng(28.7293389520265, -106.11349216961726), // Industrias y Dostoyevski
+    L.latLng(28.7265705711264, -106.12033780365736), // Dostoyevski y Sosa Vera
+    L.latLng(28.642632, -106.146909) // UTCh, punto final
+]
+
+
 var ruta_sur_ida = [
     // Aún faltan paradas de camión, aún no sé si voy a marcar TODAS
     L.latLng(28.62086575203181, -106.03171545445987), // Alsuper Fuentes Mares. Inicio
