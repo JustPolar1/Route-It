@@ -1,11 +1,5 @@
 /*Diseño de la pantalla principal*/
 
-body {
-    top: 53px;
-    position: relative;
-    
-}
-
 .logo img {
     width: 50px;
 }
@@ -56,7 +50,10 @@ h1 {
     color: #fff;
     padding-top: 95px;
 }
+
 .inicio {
+    display: flex;
+    flex-direction: column;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-style: solid;
@@ -83,7 +80,6 @@ input[type="email"],
 #baton {
     width: 100%;
     padding: 12px;
-    margin: 15px 0;
     border: none;
     border-radius: 5px;
     box-sizing: border-box;
@@ -104,14 +100,16 @@ a {
     background-color: #8F28F5;
 }
 
-.registrarse {
-    margin-top: 20px;
-}
-
 .contra {
-    margin-top: 20px;
     font-size: 14px;
     color: #aaa;
  }
 
+/*Diseño para quejas*/
+.inicio {
+    gap: 10px;
+}
 
+textarea {
+    resize: none;
+}

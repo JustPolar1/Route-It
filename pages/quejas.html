@@ -22,13 +22,18 @@
         </nav>
     
         <div class="inicio">
-            <form action="">
+            <form action="index.html" method="post">
                 <h2 id="titulo">Quejas</h2>
                 <p>Bienvenido(a) a Rutas UTCH</p>
-                <form action="index.html" method="post">
-                <input type="textarea" placeholder="Queja" required>
+                <label>Nombre de usuario</label>
+                <input placeholder="Usuario">
+                <label>Nombre de la ruta:</label>
+                <input placeholder="Ruta">
+                
+                <label>Escribe tu queja:</label>
+                <textarea placeholder="Queja" required rows="10" cols="40"></textarea>
                 <button id="baton" type="submit">Enviar</button>
             </form>
         </div>
     </body>
-</html>
+</html> 
