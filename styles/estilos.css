@@ -1,5 +1,8 @@
 /*Diseño de la pantalla principal*/
+<<<<<<< HEAD
 
+=======
+>>>>>>> f23e3cd6f017eb1fdb3e4ad168552379109caea1
 .logo img {
     width: 50px;
 }
@@ -77,12 +80,15 @@ h1 {
 input[type="text"],
 input[type="password"], 
 input[type="email"],
+textarea,
 #baton {
+    font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     padding: 12px;
     border: none;
     border-radius: 5px;
     box-sizing: border-box;
+    resize: none;
 }
 
 #baton {
