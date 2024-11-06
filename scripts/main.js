@@ -34,3 +34,49 @@ buttons.forEach(function(button) {
     });
 
 });
+
+
+window.onload = function () {
+    // Variables
+    const IMAGENES = [
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeUlNqH7GkNGP9wSC8xenCgiNH1aGXLFDcKQ&s">FL2H2oAAr0PwWQ&s',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQapgxGXx5PPQOi7QohQQ_PVC_DE78hs3mRog&s',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvkRdGzPe6se3O_hh4OYZ-FL2H2oAAr0PwWQ&s>'
+    ];
+
+    const TIEMPO_INTERVALO_MILESIMAS_SEG = 1000;
+    let posicionActual = 0;
+    let $botonRetroceder = document.querySelector('#retroceder');
+    let $botonAvanzar = document.querySelector('#avanzar');
+    let $imagen = document.querySelector('#imagen')
+    let intervalo; 
+
+
+function pasarFoto() {
+    if(posicionActual >= IMAGENES.length - 1) {
+        posicionActual = 0;
+    } else {
+        posicionActual++;
+    }
+    renderizarImagen();
+}
+
+function retrocederFoto() {
+    if(posicionActual <= 0) {
+        posicionActual = IMAGENES.length - 1;
+    } else {
+        posicionActual--;
+    }
+    renderizarImagen();
+}
+
+function renderizarImagen () {
+    $imagen.style.backgroundImage = `url(${IMAGENES[posicionActual]})`;
+}
+
+$botonAvanzar.addEventListener('click', pasarFoto);
+$botonRetroceder.addEventListener('click', retrocederFoto);
+
+ // Iniciar
+renderizarImagen();
+};
