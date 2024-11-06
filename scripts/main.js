@@ -20,4 +20,14 @@ window.addEventListener('click', function(event) {
     }
 });
 
+document.getElementById('mostrarmas').addEventListener('click', function() {
+ var moreContent = document.getElementById('moreContent'); 
+ var button = this; 
+
+ if (moreContent.style.display === 'none' || moreContent.style.display === '') { 
+    moreContent.style.display = 'block'; 
+    button.textContent = 'Mostrar menos';
+ } else {
+    moreContent.style.display = 'none'; button.textContent = 'Mostrar más +'; } }); 
+
 });
