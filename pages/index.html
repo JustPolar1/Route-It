@@ -46,7 +46,7 @@
                     <a href="map.html" id="ruta_norte">Ruta Norte</a>
                     <p id="ruta_norte_descripcion">Esta ruta inicia en Alsuper Riberas y sus paradas son:</p>
                     
-                  <div class="more-content" id="moreContent">
+                  <div class="more-content">
                     <li id="rutan_parada1">Tecnológico frente a Bodega Aurrera</li>
                     <li id="rutan_parada2">Tecnológico frente a la Coca-Cola</li>
                     <li id="rutan_parada3">Av. los Arcos y Tecnológico</li>
@@ -55,7 +55,7 @@
                     <p id="rutan_regreso">La ruta de regreso parte a las 2:00Pm</p>
                     <p id="rutan_costo">Esta ruta tiene un costo de $15.00</p>
                   </div>
-                    <button onclick id="mostrarmas">Mostrar más +</button>
+                    <button onclick class="mostrarmas">Mostrar menos</button>
                 </div>
 
 
@@ -63,7 +63,7 @@
                 <a href="map.html" id="ruta_noroeste">Ruta Noroeste</a>
                 <p id="ruta_noroeste_desc">Esta ruta inicia en Av.Prieto Luján y Av.Hidroeléctrica y sus paradas son:</p>
 
-              <div class="more-content" id="moreContent" >
+              <div class="more-content">
                 <li id="rutanoe_parada1">Av. Prieto Luján y Anthony Quinn.</li>
                 <li id="rutanoe_parada2">Av. Prieto Luján y Av.Paseo del Real.</li>
                 <li id="rutanoe_parada3">Av. Paseo del Real y Mina Casales.</li>
@@ -80,7 +80,7 @@
                 <p id="rutanoe_regreso">La ruta de regreso parte a las 2:00Pm</p>
                 <p id="rutanoe_precio">Esta ruta tiene un costo de $20.00 pesos mx en la ruta de ida hacia la UTCH y un costo de $12.00 pesos mx de regreso </p>
               </div>
-              <button onclick id="mostrarmas">Mostrar más +</button>
+              <button onclick class="mostrarmas">Mostrar menos</button>
             </div>
                 
                 <div class="rutas">
@@ -89,21 +89,24 @@
                     <p id="sur_info2">El segundo camion de esta ruta comienza en frente de Terminal Sur J.P.II</p>
                     <p id="rutasur_desc">Ambas rutas comienzan su recorido a las 6:15Am, llegando a la UTCH a las 6:55Am
                     </p>
+                    <div class="more-content">
                     <p id="rutasur_desc2">Las paradas de estas rutas son:</p>
                     <li id="rutasur_parada1">Av. Pacheco.</li>
                     <li id="rutasur_parada2">C. Juarez.</li>
                     <li id="rutasur_parada3">C. Neri Santos.</li>
                     <li id="rutasur_parada4">Av. Independencia.</li>
                     <p id="rutasur_costo">Ambas paradas tiene un costo de $15.00 pesos mx</p>
-                    <p></p>
+                    </div>
+
+                    <button onclick class="mostrarmas">Mostrar menos</button>
 
                 </div>
 
                 <div class="rutas">
                     <a href="map.html" id="rutasur_regreso">Ruta Sur de regreso de la UTCH</a>
-                    <p id="rutasur_reg_espc">Esta ruta de regreso de la UTCH comienza su trayecto en  la UTCH
-                        y sus paradas son:
-                    </p>
+                    <p id="rutasur_reg_espc">Esta ruta de regreso de la UTCH comienza su trayecto en  la UTCH y sus paradas son:</p>
+
+                    <div class="more-content">
                     <li id="rutasur_reg_parada1">Periférico frente a Fashion mall.</li>
                     <li id="rutasur_reg_parada2">Glorieta tricentenario.</li>
                     <li id="rutasur_reg_parada3">Vialidad CH-P y Fuentes Mares.</li>
@@ -112,6 +115,9 @@
                     <li id="rutasur_reg_parada6">Pacheco y Pedro Meoqui.</li>
                     <p id="rutasur_inicio">Esta ruta comienza su trayecto a las 2:05Pm</p>
                     <p id="rutasur_costo_reg">La ruta Sur tiene un costo de $20.00 pesos mx</p>
+                    </div>
+                    <button onclick class="mostrarmas">Mostrar menos</button>
+
                 </div>
             </div>
             <script src="\scripts\main.js"></script>

@@ -3,6 +3,7 @@ const toggleBtn = document.getElementById('toggle-btn');
 const sidebar = document.getElementById('sidebar');
 const userButton = document.getElementById("usuario");
 const userMenu = document.getElementById("menu");
+var buttons = document.querySelectorAll('.mostrarmas'); 
 
 toggleBtn.addEventListener('click', function() {
     sidebar.classList.toggle('hidden'); // Alterna la visibilidad de la barra lateral
@@ -20,14 +21,16 @@ window.addEventListener('click', function(event) {
     }
 });
 
-document.getElementById('mostrarmas').addEventListener('click', function() {
- var moreContent = document.getElementById('moreContent'); 
- var button = this; 
+buttons.forEach(function(button) { 
+    button.addEventListener('click', function() { 
+    var moreContent = this.previousElementSibling; 
 
- if (moreContent.style.display === 'none' || moreContent.style.display === '') { 
-    moreContent.style.display = 'block'; 
-    button.textContent = 'Mostrar menos';
- } else {
-    moreContent.style.display = 'none'; button.textContent = 'Mostrar más +'; } }); 
+    if (moreContent.style.display === 'none') { 
+        moreContent.style.display = 'block'; 
+        this.textContent = 'Mostrar menos'; 
+    } else { 
+        moreContent.style.display = 'none'; 
+        this.textContent = 'Mostrar más'; } })
+    });
 
 });
