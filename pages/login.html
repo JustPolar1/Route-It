@@ -2,79 +2,11 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title id="inicioS">inicio de sesión</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-image: url('/assets/ejemplo.png');
-            background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-            color: #fff;
-            padding-top: 95px;
-        }
-        .inicio {
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
-            border-style: solid;
-            border-color: rgb(193, 193, 193);
-            border-width: 1px;
-            background-color: rgba(0, 0, 0, 0.429);
-            vertical-align: center;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-            width: 350px;
-            text-align: center;
-        }
-        h2 {
-            margin-bottom: 20px;
-            font-size: 24px;
-            color:#0041F5;
-            text-shadow: 2px 2px 5px #3f3f3f;
-        }
-
-        input[type="text"],
-        input[type="password"],
-        button {
-            width: 100%;
-            padding: 12px;
-            margin: 15px 0;
-            border: none;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-        
-        button {
-            background-color: #0041F5;
-            color: white;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        a {
-            color: #9ab5ff;
-        }
-
-        button:hover{
-            background-color: #8F28F5;
-        }
-        
-        .registrarse {
-            margin-top: 20px;
-        }
-
-        .contra {
-            margin-top: 20px;
-            font-size: 14px;
-            color: #aaa;
-         }
-    </style>
+    <title id="incio">inicio de sesión</title>>
     <link href="\styles\main.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/estilos.css">
 </head>
-<body>
+<body id="lokeseaxd">
     <nav>
         <div class="barra-superior">
             <ul class="indices-izq">
@@ -84,36 +16,22 @@
             <ul class="indices-der">
                 <li id="usuario">
                     <a href="javascript:void(0);"><i class="fas fa-user"></i></a>
-                    <div class="menu_desplegable" id="menu">
-                        <ul>
-                            <li><a href="login.html" id="profile_link">Perfil</a></li>
-                            <hr>
-                            <select id="languageSwitcher">Cambiar idioma
-                                <option value="es" id="esp">Español</option>
-                                <option value="en" id="eng">Inglés</option>
-                            </select>
-                            <hr>
-                            <li><a href="#" id="Link_configuracion">Configuración</a></li>
-                            <hr>
-                            <li><a href="#" id="Link_cerrar_sesion">Cerrar Sesión</a></li>
-                        </ul>
-                    </div>
                 </li>
             </ul>
         </div>
     </nav>
 
     <div class="inicio">
-        <h2 id="parrafo1">Inicio de Sesión</h2>
-        <p id="parrafo2">Bienvenido(a) a Rutas UTCH</p>
+        <h2 id="titulo">Inicio de Sesión</h2>
+        <p>Bienvenido(a) a Rutas UTCH</p>
         <form action="index.html" method="post">
             <input type="text" id="username" name="username" placeholder="Usuario" required>
             <input type="password" id="password" name="password" placeholder="Contraseña" required>
-            <button type="submit" id="submit1">Entrar</button>
+            <button id="baton" type="submit">Entrar</button>
         </form>
 
         <div class="registrarse">
-            <p id="parrafo3">¿No tienes cuenta? <a href="/register" id="registro">Regístrate aquí</a></p>
+            <p>¿No tienes cuenta? <a href="register.html">Regístrate aquí</a></p>
         </div>
     
         <div class="contra">
