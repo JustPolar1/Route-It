@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <p>
         <head>
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,23 +13,26 @@
                 <ul class="indices-izq">
                     <li><a href="javascript:void(0);" id="toggle-btn"><i style="display: none;" class="fas fa-bars"></i></a></li>
                 </ul>
-                <h1><a href="index.html">UTCH Rutas</a></h1>
+                <h1><a href="index.html" id="titulo2">UTCH Rutas</a></h1>
                 <ul class="indices-der">
                     <li id="usuario">
                         <a href="javascript:void(0);"><i class="fas fa-user"></i></a>
                         <div class="menu_desplegable" id="menu">
                             <ul>
                                 <li>
-                                    <a href="login.html"><button class="pildora">Perfil</button></a>
+                                    <a href="login.html"><button class="pildora" id="profile_link">Perfil</button></a>
                                 </li>
                                 <li>
-                                    <button class="pildora">Cambiar idioma</button>
+                                    <select class="pildora" id="languageSwitcher">Cambiar idioma
+                                        <option value="es" class="esp">Español</option>
+                                        <option value="en" class="eng">Inglés</option>
+                                    </select>
                                 </li>
                                 <li>
-                                    <button class="pildora">Configuración</button>
+                                    <button class="pildora" id="Link_configuracion">Configuración</button>
                                 </li>
                                 <li>
-                                    <button class="pildora">Cerrar sesión</button>
+                                    <button class="pildora" id="Link_cerrar_sesion">Cerrar sesión</button>
                                 </li>
                             </ul>
                         </div>
@@ -38,90 +41,96 @@
             </div>
         </nav>
             <div class="contenido">
-                <h2 id="rutas-camiones">RUTAS DE CAMIONES</h2>                
+
+                <div class="carousel">
+                    <button id="retroceder">Retroceder</button>
+                    <div id="imagen">
+             </div>
+                    <button id="avanzar">Avanzar</button>
+                </div>
+                
+
+                <h2 id="rutas_camiones">RUTAS DE CAMIONES</h2>                
                 <div class="rutas">
-                    <a href="map.html" id="ruta-norte">Ruta Norte</a>
-                    <p id="rutan-salida">La salida de esta ruta inicia su trayecto a las 6:10 am, la llegada a la UTCH es las 6:55 am.</p>
-                    <p id="rutan-regreso">La ruta de regreso parte a las 2:00 Pm.</p>
-                    <p id="rutan-costo">Esta ruta tiene un costo de $15.00 pesos mx.</p>
-                    <p id="ruta-norte-descripcion">Esta ruta inicia en Alsuper Riberas.</p>
-                    <p id="">Sus paradas son las siguientes:</p>
-                    <li id="rutan-parada1">Tecnológico frente a Bodega Aurrera.</li>
-                    <li id="rutan-parada2">Tecnológico frente a la Coca-Cola.</li>
-                    <li id="rutan-parada3">Av. los Arcos y Tecnológico.</li>
-                    <li id="rutan-parada4">San Miguel el Grande y Circuito Universitario.</li>
+                    <a href="map.html" id="ruta_norte">Ruta Norte</a>
+                    <p id="ruta_norte_descripcion">Esta ruta inicia en Alsuper Riberas y sus paradas son:</p>
+                    
+                  <div class="more-content">
+                    <li id="rutan_parada1">Tecnológico frente a Bodega Aurrera</li>
+                    <li id="rutan_parada2">Tecnológico frente a la Coca-Cola</li>
+                    <li id="rutan_parada3">Av. los Arcos y Tecnológico</li>
+                    <li id="rutan_parada4">San Miguel el Grande y Circuito Universitario</li>
+                    <p id="rutan_salida">La salida de esta ruta es a las 6:10AM, la llegada a la UTCH es las 6:55AM</p>
+                    <p id="rutan_regreso">La ruta de regreso parte a las 2:00Pm</p>
+                    <p id="rutan_costo">Esta ruta tiene un costo de $15.00</p>
+                  </div>
+                    <button onclick class="mostrarmas">Mostrar menos</button>
                 </div>
 
 
             <div class="rutas">
-                <a href="map.html" id="ruta-noreste">Ruta Noroeste</a>
-                <p id="ruta-noreste-desc">Esta ruta inicia su trayecto en Av.Prieto Luján y Av.Hidroeléctrica</p>
-                <p id="rutane-salida">La salida de esta ruta es a las 6:10 am.</p>
-                <p id="">Esta ruta llega a la UTCH a las 6:55 am.</p>
-                <p id="rutane-regreso">La ruta de regreso parte a las 2:00 pm.</p>
-                <p id="rutane-precio">Esta ruta tiene un costo de $20.00 pesos mx en la ruta de ida hacia la UTCH </p>
-                <p id="">Esta ruta tiene un costo de $12.00 pesos mx de regreso</p>
-                <p id="">Sus paradas son las siguientes:</p>
-                <li id="rutane-parada1">Av. Prieto Luján y Anthony Quinn.</li>
-                <li id="rutane-parada2">Av. Prieto Luján y Av.Paseo del Real.</li>
-                <li id="rutane-parada3">Av. Paseo del Real y Mina Casales.</li>
-                <li id="rutane-parada4">Mina Progreso y Av. de las Industrias.</li>
-                <li id="rutane-parada5">Elecktra de Av. de las industrias. (casi al llegar a Vialidad Los Nogales)</li>
-                <li id="rutane-parada6">Av. de las Industrias y Dovstoyevski.</li>
-                <li id="rutane-parada7">Av. Dovstoyevski y Sosa Vera.</li>
-                <li id="rutane-parada8">Tecnológico y Miguel de Cervantes.</li>
-                <li id="rutane-parada9">Tecnológico y Homero.</li>
-                <li id="rutane-parada10">Perif. de la Juventud y C. de la Educación.</li>
-                <li id="rutane-parada11">C. Ignacio Rodríguez y Perif. de la Juventud.</li>
-                <li id="rutane-parada12">C. Egipto y Perif. de la Juventud.</li>
-                </p>
+                <a href="map.html" id="ruta_noroeste">Ruta Noroeste</a>
+                <p id="ruta_noroeste_desc">Esta ruta inicia en Av.Prieto Luján y Av.Hidroeléctrica y sus paradas son:</p>
 
+              <div class="more-content">
+                <li id="rutanoe_parada1">Av. Prieto Luján y Anthony Quinn.</li>
+                <li id="rutanoe_parada2">Av. Prieto Luján y Av.Paseo del Real.</li>
+                <li id="rutanoe_parada3">Av. Paseo del Real y Mina Casales.</li>
+                <li id="rutanoe_parada4">Mina Progreso y Av. de las Industrias.</li>
+                <li id="rutanoe_parada5">Elecktra de Av. de las industrias. (casi al llegar a Vialidad Los Nogales)</li>
+                <li id="rutanoe_parada6">Av. de las Industrias y Dovstoyevski.</li>
+                <li id="rutanoe_parada7">Av. Dovstoyevski y Sosa Vera.</li>
+                <li id="rutanoe_parada8">Tecnológico y Miguel de Cervantes.</li>
+                <li id="rutanoe_parada9">Tecnológico y Homero</li>
+                <li id="rutanoe_parada10">Perif. de la Juventud y C. de la Educación.</li>
+                <li id="rutanoe_parada11">C. Ignacio Rodríguez y Perif. de la Juventud.</li>
+                <li id="rutanoe_parada12">C. Egipto y Perif. de la Juventud</li>
+                <p id="rutanoe_salida">La salida de esta ruta es a las 6:10Am, llegando a la UTCH a las 6:55Am</p>
+                <p id="rutanoe_regreso">La ruta de regreso parte a las 2:00Pm</p>
+                <p id="rutanoe_precio">Esta ruta tiene un costo de $20.00 pesos mx en la ruta de ida hacia la UTCH y un costo de $12.00 pesos mx de regreso </p>
+              </div>
+              <button onclick class="mostrarmas">Mostrar menos</button>
+            </div>
+                
                 <div class="rutas">
-                    <a href="map.html" id="ruta-noreste">Ruta Suroeste</a>
-                    <p id="">Esta ruta inicia su trayecto en R. Almada y 38 a las 6:20 am.</p>
-                    <p id="">Esta ruta tiene un costo de 15 pesos mx.</p>
-                    <p id="">Esta ruta llega a la universidad a las 6:50 am.</p>
-                    <p id="">Sus paradas son las siguientes:</p>
-                    <li id="">46 y Samaniego 6:30 am.</li>
-                    <li id="">Samaniego y 80 6:38 am.</li>
-                    <li id="">80 y Vialidad CH-P 6:44 am.</li>
-                    <li id="">92 y Vialidad CH-P (Glorieta) 6:48 am.</li>
+                    <a href="map.html" id="ruta_sur">Ruta Sur rumbo a la UTCH </a>
+                    <p id="sur_info1">El primer camión de esta ruta comeinza en Alsuper Fuentes Mares</p>
+                    <p id="sur_info2">El segundo camion de esta ruta comienza en frente de Terminal Sur J.P.II</p>
+                    <p id="rutasur_desc">Ambas rutas comienzan su recorido a las 6:15Am, llegando a la UTCH a las 6:55Am
+                    </p>
+                    <div class="more-content">
+                    <p id="rutasur_desc2">Las paradas de estas rutas son:</p>
+                    <li id="rutasur_parada1">Av. Pacheco.</li>
+                    <li id="rutasur_parada2">C. Juarez.</li>
+                    <li id="rutasur_parada3">C. Neri Santos.</li>
+                    <li id="rutasur_parada4">Av. Independencia.</li>
+                    <p id="rutasur_costo">Ambas paradas tiene un costo de $15.00 pesos mx</p>
+                    </div>
 
-                </div>
-
-
-
-                </div>
-                <div class="rutas">
-                    <a href="map.html" id="ruta-sur">Ruta Sur rumbo a la UTCH </a>
-                    <p id="sur-info1">El primer camión de esta ruta inicia su trayecto en Alsuper Fuentes Mares.</p>
-                    <p id="sur-info2">El segundo camion de esta ruta inicia su trauecto en frente de Terminal Sur J.P.II</p>
-                    <p id="rutasur-costo">Ambas paradas tiene un costo de $15.00 pesos mx.</p>
-                    <p id="rutasur-desc">Ambas rutas comienzan su recorido a las 6:15Am, llegando a la UTCH a las 6:55 am.</p>
-                    <p id="rutasur-desc2">Las paradas de estas rutas son:</p>
-                    <li id="rutasur-parada1">Av. Pacheco.</li>
-                    <li id="rutasur-parada2">C. Juarez.</li>
-                    <li id="rutasur-parada3">C. Neri Santos.</li>
-                    <li id="rutasur-parada4">Av. Independencia.</li>
-                    <p></p>
+                    <button onclick class="mostrarmas">Mostrar menos</button>
 
                 </div>
 
                 <div class="rutas">
-                    <a href="map.html" id="rutasur-regreso">Ruta Sur de regreso de la UTCH</a>
-                    <p id="rutasur-reg-espc">Esta ruta de regreso de la UTCH comienza su trayecto en la UTCH a las 2:05 pm.</p>
-                    <p id="rutasur-inicio">Esta ruta comienza su trayecto a las 2:05 pm.</p>
-                    <p id="rutasur-costo">La ruta Sur tiene un costo de $20.00 pesos mx.</p>
-                    <p>Sus paradas son las siguientes:</p>
-                    <li id="rutasur-reg-parada1">Periférico frente a Fashion mall.</li>
-                    <li id="rutasur-reg-parada2">Glorieta tricentenario.</li>
-                    <li id="rutasur-reg-parada3">Vialidad CH-P y Fuentes Mares.</li>
-                    <li id="rutasur-reg-parada4">Fuentes Mares y Nva. España.</li>
-                    <li id="rutasur-reg-parada5">Terminar Sur.</li>
-                    <li id="rutasur-reg-parada6">Pacheco y Pedro Meoqui.</li>
+                    <a href="map.html" id="rutasur_regreso">Ruta Sur de regreso de la UTCH</a>
+                    <p id="rutasur_reg_espc">Esta ruta de regreso de la UTCH comienza su trayecto en  la UTCH y sus paradas son:</p>
+
+                    <div class="more-content">
+                    <li id="rutasur_reg_parada1">Periférico frente a Fashion mall.</li>
+                    <li id="rutasur_reg_parada2">Glorieta tricentenario.</li>
+                    <li id="rutasur_reg_parada3">Vialidad CH-P y Fuentes Mares.</li>
+                    <li id="rutasur_reg_parada4">Fuentes Mares y Nva. España.</li>
+                    <li id="rutasur_reg_parada5">Terminar Sur.</li>
+                    <li id="rutasur_reg_parada6">Pacheco y Pedro Meoqui.</li>
+                    <p id="rutasur_inicio">Esta ruta comienza su trayecto a las 2:05Pm</p>
+                    <p id="rutasur_costo_reg">La ruta Sur tiene un costo de $20.00 pesos mx</p>
+                    </div>
+                    <button onclick class="mostrarmas">Mostrar menos</button>
+
                 </div>
             </div>
             <script src="\scripts\main.js"></script>
+            <script src="\scripts\translate.js"></script>
         </body>
     </html>
     
