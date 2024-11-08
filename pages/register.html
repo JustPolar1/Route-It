@@ -22,21 +22,16 @@
         </nav>
 
         <div class="inicio">
-            <h2 id="titulo">Inicio de Sesión</h2>
-            <p>Bienvenido(a) a Rutas UTCH</p>
-            <form id="login" action="/auth/login" method="post">
-                <input type="email" id="username" name="email" placeholder="Email" required>
-                <input type="password" id="password" name="password" placeholder="Contraseña" required>
-                <button id="baton" type="submit">Entrar</button>
-            </form>
+            <form id="register_form" action="/auth/register" method="post">
+                <h2 id="titulo">Registro</h2>
+                <p>Bienvenido(a) a Rutas UTCH</p>
 
-            <div class="registrarse">
-                <p>¿No tienes cuenta? <a href="/pages/register.html">Regístrate aquí</a></p>
-            </div>
-        
-            <div class="contra">
-                <p><a href="#">¿Olvidaste tu contraseña?</a></p>
-            </div>
+                <input name="email" type="email" placeholder="Email" required>
+                <input name="password" type="password" placeholder="Contraseña" required>
+                <input name="password_confirmation" type="password" placeholder="Confirmar Contraseña" required>
+                <button id="baton" type="submit">Regístrate</button>
+            </form>
         </div>
+        <script src="/scripts/forms.js"></script>
     </body>
 </html>
