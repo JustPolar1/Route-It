@@ -34,24 +34,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Mapa de elementos que deben ser traducidos
     let elementsMap = {
-        "tituloprincipal": ["#tituloprincipal"],
-        "titulo2": ["#titulo2"],
+        "titulos": {
+            "tituloprincipal": ["#tituloprincipal"],
+            "titulo2": ["#titulo2"]
+        },
         "usuario": {
-        "profile_link": ["#profile_link"],
-        "selectoridioma": ["#selectoridioma"],
-        "esp": ["#esp"],
-        "eng": ["#eng"],
-        "link_configuracion": ["#link_configuracion"],
-        "link_cerrar_sesion": ["#link_cerrar-sesion"],
-        "nombre": ["#ruta_norte"],
-        "descripcion": ["#ruta_norte_descripcion"],
-        "parada1": ["#rutan_parada1"],
-        "parada2": ["#rutan_parada2"],
-        "parada3": ["#rutan_parada3"],
-        "parada4": ["#rutan_parada4"],
-        "salida": ["#rutan_salida"],
-        "regreso": ["#rutan_regreso"],
-        "costo": ["#rutan_costo"]
+            "profile_link": ["#profile_link"],
+            "selectoridioma": ["#selectoridioma"],
+            "esp": ["#esp"],
+            "eng": ["#eng"],
+            "link_configuracion": ["#link_configuracion"],
+            "link_cerrar_sesion": ["#link_cerrar-sesion"]
+        },
+        "rutas_camiones": {
+            "ruta_norte": {
+                "nombre": ["#ruta_norte"],
+                "descripcion": ["#ruta_norte_descripcion"],
+                "paradas": {
+                    "parada1": ["#rutan_parada1"],
+                    "parada2": ["#rutan_parada2"],
+                    "parada3": ["#rutan_parada3"],
+                    "parada4": ["#rutan_parada4"]
+                },
+                "salida": ["#rutan_salida"],
+                "regreso": ["#rutan_regreso"],
+                "costo": ["#rutan_costo"]
             },
             "ruta_noroeste": {
                 "nombre": ["#ruta_noroeste"],
@@ -105,7 +112,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 }
             }
-        };
+        }
+    };
 
     // Función para actualizar el contenido
     function updateContent(language) {
