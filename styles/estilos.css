@@ -30,18 +30,10 @@ h1 {
     font-weight: bold;
 }
 
-.contenido {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    border-radius: 12px;
-    align-items: center;
-}
-
 .pildora_boton {
     background-color: #0041F5;
     color: white;
-    padding: 5px 10px;
+    padding: 10px 10px;
     width: 50%;
     border: none;
     border-radius: 100px;
@@ -52,6 +44,10 @@ h1 {
     align-items: center;
 }
 
+.pildora_boton {
+    cursor: pointer;
+}
+
 .pildora_boton span {
     flex: 1;
     margin: 0;
@@ -60,6 +56,16 @@ h1 {
 .pildora_boton i {
     font-size: 25px;
 }
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 12px;
+    align-items: center;
+    gap: 10px;
+}
+
 
 .rutas {
     display: flex;
@@ -76,10 +82,6 @@ h1 {
     color: lightslategray;
 }
 
-.rutas:hover {
-    cursor: pointer;
-}
-
 .rutas.desactivado:hover {
     cursor: default;
 }
@@ -91,16 +93,38 @@ h1 {
 .info {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
+}
+
+.preview {
+    width: 60%;
+    display: flex;
+    justify-content: end;
 }
 
 .preview img {
-    width: 100%;
-    height: auto; 
+    max-width: 60%;
+    height: auto;
     object-fit: cover;
-    max-width: 300px;
-    border-radius: 8px;
+    border-radius: 15px;
 }
 
+@media (max-width: 768px) {
+    .info {
+        flex-wrap: wrap;
+        flex-direction: column; /* Cambia la dirección del flex a columna */
+        justify-content: center; /* Centra los elementos */
+        align-items: center;
+    }
+    .preview {
+        justify-content: center;
+        max-width: 100% 
+    }
+    .preview img {
+        max-width: 100%;
+        height: auto;
+    }
+}
 /* Estilos de inicio de sesión y del apartado de registro*/
 
 #lokeseaxd {
@@ -112,7 +136,7 @@ h1 {
     align-items: center;
     margin: 0;
     color: #fff;
-    padding-top: 95px;
+    padding-top: 15px;
 }
 
 .inicio {
