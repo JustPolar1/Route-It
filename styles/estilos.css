@@ -38,9 +38,34 @@ h1 {
     align-items: center;
 }
 
-.rutas {
+.pildora_boton {
+    background-color: #0041F5;
     color: white;
-    background-color: #6c688a;
+    padding: 5px 10px;
+    width: 50%;
+    border: none;
+    border-radius: 100px;
+    position: relative;
+    bottom: -30px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.pildora_boton span {
+    flex: 1;
+    margin: 0;
+}
+
+.pildora_boton i {
+    font-size: 25px;
+}
+
+.rutas {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color: white;
     border-radius: 10px;
     width: 80%;
     margin: 10px;
@@ -48,7 +73,7 @@ h1 {
 }
 
 .rutas.desactivado {
-    color: lightgray;
+    color: lightslategray;
 }
 
 .rutas:hover {
@@ -59,9 +84,23 @@ h1 {
     cursor: default;
 }
 
-.rutas h2 {
+.info h2 {
     margin-top: 0;
 }
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.preview img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
 /* Estilos de inicio de sesión y del apartado de registro*/
 
 #lokeseaxd {
