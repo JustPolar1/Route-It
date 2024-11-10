@@ -66,6 +66,9 @@ h1 {
     gap: 10px;
 }
 
+.contenido a {
+    text-decoration: none;
+}
 
 .rutas {
     display: flex;
@@ -97,32 +100,37 @@ h1 {
 }
 
 .preview {
-    width: 60%;
+    width: 75%;
     display: flex;
     justify-content: end;
 }
 
 .preview img {
-    max-width: 60%;
+    max-width: 90%;
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 15px;
+    margin: auto 0;
 }
-
+/* Para proporciones más estrechas */
 @media (max-width: 768px) {
     .info {
         flex-wrap: wrap;
-        flex-direction: column; /* Cambia la dirección del flex a columna */
-        justify-content: center; /* Centra los elementos */
+        flex-direction: column; 
+        justify-content: center; 
         align-items: center;
     }
     .preview {
         justify-content: center;
-        max-width: 100% 
+        width: 100%;
     }
     .preview img {
         max-width: 100%;
         height: auto;
+    }
+
+    .pildora_boton {
+        width: 65%;
     }
 }
 /* Estilos de inicio de sesión y del apartado de registro*/
