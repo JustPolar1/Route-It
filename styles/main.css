@@ -105,3 +105,9 @@ body {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.08);
 }
+
+.pildora:disabled {
+    cursor: auto;
+    background-color: rgba(0, 0, 0, 0.08);
+    color: rgb(221, 221, 221);
+}

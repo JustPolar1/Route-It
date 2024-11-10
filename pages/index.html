@@ -32,7 +32,14 @@
                                     <button class="pildora" class="Link_configuracion">Configuración</button>
                                 </li>
                                 <li>
-                                    <button class="pildora" id="Link_cerrar_sesion">Cerrar sesión</button>
+                                    <button class="pildora" onclick="fetch('/auth/logout', {
+                                        method: 'POST', // Usar POST para cerrar sesión
+                                        credentials: 'include' // Esto incluye las cookies en la solicitud
+                                    }).then(response => {
+                                        if (response.redirected) {
+                                            window.location.href = response.url; // Redirigir si la respuesta indica redirección
+                                        }
+                                    })">Cerrar sesión</button>
                                 </li>
                             </ul>
                         </div>
@@ -69,14 +76,10 @@
 
 
             <div class="rutas">
-                <a href="map.html" id="ruta-noreste">Ruta Noroeste</a>
-                <p id="ruta-noreste-desc">Esta ruta inicia su trayecto en Av.Prieto Luján y Av.Hidroeléctrica</p>
-                <p id="rutane-salida">La salida de esta ruta es a las 6:10 am.</p>
-                <p id="">Esta ruta llega a la UTCH a las 6:55 am.</p>
-                <p id="rutane-regreso">La ruta de regreso parte a las 2:00 pm.</p>
-                <p id="rutane-precio">Esta ruta tiene un costo de $20.00 pesos mx en la ruta de ida hacia la UTCH </p>
-                <p id="">Esta ruta tiene un costo de $12.00 pesos mx de regreso</p>
-                <p id="">Sus paradas son las siguientes:</p>
+                <a href="/map" id="ruta-noreste">Ruta Noroeste</a>
+                <p id="ruta-noreste-desc">Esta ruta inicia en Av.Prieto Luján y Av.Hidroeléctrica 
+                    y sus paradas son las siguientes:
+                </p>
                 <li id="rutane-parada1">Av. Prieto Luján y Anthony Quinn.</li>
                 <li id="rutane-parada2">Av. Prieto Luján y Av.Paseo del Real.</li>
                 <li id="rutane-parada3">Av. Paseo del Real y Mina Casales.</li>
@@ -108,11 +111,11 @@
 
                 </div>
                 <div class="rutas">
-                    <a href="map.html" id="ruta-sur">Ruta Sur rumbo a la UTCH </a>
-                    <p id="sur-info1">El primer camión de esta ruta inicia su trayecto en Alsuper Fuentes Mares.</p>
-                    <p id="sur-info2">El segundo camion de esta ruta inicia su trauecto en frente de Terminal Sur J.P.II</p>
-                    <p id="rutasur-costo">Ambas paradas tiene un costo de $15.00 pesos mx.</p>
-                    <p id="rutasur-desc">Ambas rutas comienzan su recorido a las 6:15Am, llegando a la UTCH a las 6:55 am.</p>
+                    <a href="/map" id="ruta-sur">Ruta Sur rumbo a la UTCH </a>
+                    <p id="sur-info1">El primer camión de esta ruta comeinza en Alsuper Fuentes Mares</p>
+                    <p id="sur-info2">El segundo camion de esta ruta comienza en frente de Terminal Sur J.P.II</p>
+                    <p id="rutasur-desc">Ambas rutas comienzan su recorido a las 6:15Am, llegando a la UTCH a las 6:55Am
+                    </p>
                     <p id="rutasur-desc2">Las paradas de estas rutas son:</p>
                     <li id="rutasur-parada1">Av. Pacheco.</li>
                     <li id="rutasur-parada2">C. Juarez.</li>
@@ -123,21 +126,18 @@
                 </div>
 
                 <div class="rutas">
-                    <a href="map.html" id="rutasur_regreso">Ruta Sur de regreso de la UTCH</a>
-                    <p id="rutasur_reg_espc">Esta ruta de regreso de la UTCH comienza su trayecto en  la UTCH y sus paradas son:</p>
-
-                    <div class="more-content">
-                    <li id="rutasur_reg_parada1">Periférico frente a Fashion mall.</li>
-                    <li id="rutasur_reg_parada2">Glorieta tricentenario.</li>
-                    <li id="rutasur_reg_parada3">Vialidad CH-P y Fuentes Mares.</li>
-                    <li id="rutasur_reg_parada4">Fuentes Mares y Nva. España.</li>
-                    <li id="rutasur_reg_parada5">Terminar Sur.</li>
-                    <li id="rutasur_reg_parada6">Pacheco y Pedro Meoqui.</li>
-                    <p id="rutasur_inicio">Esta ruta comienza su trayecto a las 2:05Pm</p>
-                    <p id="rutasur_costo_reg">La ruta Sur tiene un costo de $20.00 pesos mx</p>
-                    </div>
-                    <button onclick class="mostrarmas">Mostrar menos</button>
-
+                    <a href="/map" id="rutasur-regreso">Ruta Sur de regreso de la UTCH</a>
+                    <p id="rutasur-reg-espc">Esta ruta de regreso de la UTCH comienza su trayecto en  la UTCH
+                        y sus paradas son:
+                    </p>
+                    <li id="rutasur-reg-parada1">Periférico frente a Fashion mall.</li>
+                    <li id="rutasur-reg-parada2">Glorieta tricentenario.</li>
+                    <li id="rutasur-reg-parada3">Vialidad CH-P y Fuentes Mares.</li>
+                    <li id="rutasur-reg-parada4">Fuentes Mares y Nva. España.</li>
+                    <li id="rutasur-reg-parada5">Terminar Sur.</li>
+                    <li id="rutasur-reg-parada6">Pacheco y Pedro Meoqui.</li>
+                    <p id="rutasur-inicio">Esta ruta comienza su trayecto a las 2:05Pm</p>
+                    <p id="rutasur-costo">La ruta Sur tiene un costo de $20.00 pesos mx</p>
                 </div>
             </div>
             <script src="\scripts\main.js"></script>
