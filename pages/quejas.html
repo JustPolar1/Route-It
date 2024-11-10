@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+        <title>Quejas</title>
         <link href="\styles\main.css" rel="stylesheet">
         <link rel="stylesheet" href="/styles/estilos.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +13,7 @@
                 <ul class="indices-izq">
                     <li></i></a></li>
                 </ul>
-                <h1><a href="index.html">UTCH Rutas</a></h1>
+                <h1><a href="/">UTCH Rutas</a></h1>
                 <ul class="indices-der">
                     <li id="usuario">
                         <a href="javascript:void(0);"><i class="fas fa-user"></i></a>
@@ -22,13 +23,13 @@
         </nav>
     
         <div class="inicio">
-            <form action="index.html" method="post">
+            <form action="/queja" method="post">
                 <h2 id="titulo">Quejas</h2>
-                <label>Nombre de la ruta a la que va dirigida la queja</label>
-                <input type="text" placeholder="Nombre de la ruta..." required>
+                <label>Ruta a la que va dirigida la queja</label>
+                <input name="ruta_id" type="text" placeholder="Ruta..." required>
 
                 <label>Describe tu queja con respeto:</label>
-                <textarea required rows="7" placeholder="Mi queja..."></textarea>
+                <textarea name="comentario" required rows="7" placeholder="Mi queja..."></textarea>
                 <button id="baton" type="submit">Enviar</button>
             </form>
         </div>
