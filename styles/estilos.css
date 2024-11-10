@@ -158,9 +158,33 @@ textarea {
     margin-bottom: 20px;
 }
 
-.seccion1{
-    
+/* Animación para aparecer desde abajo */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+
+/* Clase que activa la animación */
+.fade-in {
+    opacity: 0; /* Comienza invisible */
+    animation: fadeInUp 1s ease forwards; /* Duración y suavizado */
+}
+
+/* Añadir un espacio entre secciones */
+section {
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 
 
 
