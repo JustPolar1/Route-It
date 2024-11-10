@@ -3,15 +3,19 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>UTCH Rutas</title>
-        <link href="\styles\main.css" rel="stylesheet">
-        <link href="\styles\map.css" rel="stylesheet">
+        <link href="/styles/main.css" rel="stylesheet">
+        <link href="/styles/map.css" rel="stylesheet">
+        
+        <!-- CSS de Leaflet -->
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
         crossorigin=""/>
-        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-        crossorigin=""></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        
+        <!-- CSS de Leaflet Routing Machine -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css"/>
+        
+        <!-- CSS de Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
     </head>
     <body>
         <nav>
@@ -19,14 +23,14 @@
                 <ul class="indices-izq">
                     <li><a href="javascript:void(0);" id="toggle-btn"><i class="fas fa-bars"></i></a></li>
                 </ul>
-                <h1><a href="index.html" id="titulo2">UTCH Rutas</a></h1>
+                <h1><a href="/">UTCH Rutas</a></h1>
                 <ul class="indices-der">
                     <li id="usuario">
                         <a href="javascript:void(0);"><i class="fas fa-user"></i></a>
                         <div class="menu_desplegable" id="menu">
                             <ul>
                                 <li>
-                                    <a href="login.html"><button class="pildora" type="button" id="profile_link">Perfil</button></a>
+                                    <a href="/perfil"><button class="pildora" type="button">Perfil</button></a>
                                 </li>
                                 <li>
                                     <select class="pildora" id="languageSwitcher">Cambiar idioma
@@ -53,28 +57,34 @@
                     <h3 id="rutas">Rutas</h3>
                 </li>
                 <li>
-                    <button class="pildora" id="ruta_norte">Ruta Norte</button>
+                    <button class="pildora ruta" onclick="ruta_actual = ruta_norte_1">Ruta Norte 1</button>
                 </li>
                 <li>
-                    <button class="pildora" id="ruta_noroeste">Ruta Noroeste</button>
+                    <button class="pildora ruta" onclick="ruta_actual = ruta_norte_2">Ruta Norte 2</button>
                 </li>
                 <li>
-                    <button class="pildora" id="ruta_sur">Ruta Sureste</button>
+                    <button class="pildora ruta" onclick="ruta_actual = ruta_sur_ida">Ruta sur de ida</button>
                 </li>
                 <li>
-                    <button class="pildora" id="ruta_sur2">Ruta Suroeste</button>
+                    <button class="pildora ruta" onclick="ruta_actual = ruta_sur_regreso">Ruta sur de regreso</button>
                 </li>
             <footer>
                 <ul>
-                    <li><a href="quejas.html" id="quejas">Quejas</a></li>
+                    <li><a href="/queja">Quejas</a></li>
                 </ul>
             </footer>
         </div>
 
         <div id="map"></div>
-
-        <script src="\scripts\map.js"></script>
-        <script src="\scripts\main.js"></script>
-        <script src="\scripts\translate.js"></script>
+        
+        <!-- Leaflet -->
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+        <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+        
+        <!-- Scripts locales -->
+        <script src="/scripts/map.js"></script>
+        <script src="/scripts/main.js"></script>
     </body>
 </html>
