@@ -1,6 +1,6 @@
 // Función que activa las animaciones cuando una sección es visible
 function activarAnimacion() {
-    const sections = document.querySelectorAll("section");
+    const sections = document.querySelectorAll("section, div");
 
     sections.forEach(section => {
         const rect = section.getBoundingClientRect();
