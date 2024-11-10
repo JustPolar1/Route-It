@@ -1,4 +1,10 @@
 /*Diseño de la pantalla principal*/
+body {
+    position: relative;
+    top: 70px;
+}
+
+
 .logo img {
     width: 50px;
 }
