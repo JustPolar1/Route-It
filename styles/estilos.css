@@ -275,18 +275,20 @@ textarea {
 
 /* Clase que activa la animación */
 .fade-in {
-    opacity: 0; /* Comienza invisible */
-    animation: fadeInUp 1s ease forwards; /* Duración y suavizado */
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
 }
 
-/* Añadir un espacio entre secciones */
-section {
+/* Estilos opcionales para las secciones y divs */
+section, div {
     margin-bottom: 50px;
     padding: 20px;
     border-radius: 8px;
     background-color: #f9f9f9;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+
 
 
 
