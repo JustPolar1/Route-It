@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const elements = document.querySelectorAll("section, div"); // Selecciona elementos a animar
+    const elements = document.querySelectorAll("section, .info, .preview, .pildora_boton"); // Selecciona elementos a animar
 
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }, {
-        threshold: 0.1 // Activa la animación cuando el 10% del elemento es visible
+        threshold: 0 // Activa la animación cuando el 10% del elemento es visible
     });
 
     elements.forEach(element => {
