@@ -50,35 +50,38 @@ document.addEventListener('DOMContentLoaded', () => {
             "rutan_salida": ["#rutan_salida"],
             "rutan_regreso": ["#rutan_regreso"],
             "rutan_costo": ["#rutan_costo"],
-            "#showmap": ["#showmap"],
+            "showmap": ["#showmap"],
 
-            "ruta_noroeste": {
-                "nombre": ["#ruta_noroeste"],
-                "descripcion": ["#ruta_noroeste_desc"],
-                "paradas": {
-                    "parada1": ["#rutanoe_parada1"],
-                    "parada2": ["#rutanoe_parada2"],
-                    "parada3": ["#rutanoe_parada3"],
-                    "parada4": ["#rutanoe_parada4"],
-                    "parada5": ["#rutanoe_parada5"],
-                    "parada6": ["#rutanoe_parada6"],
-                    "parada7": ["#rutanoe_parada7"],
-                    "parada8": ["#rutanoe_parada8"],
-                    "parada9": ["#rutanoe_parada9"],
-                    "parada10": ["#rutanoe_parada10"],
-                    "parada11": ["#rutanoe_parada11"],
-                    "parada12": ["#rutanoe_parada12"]
-                },
-                "salida": ["#rutanoe_salida"],
-                "regreso": ["#rutanoe_regreso"],
-                "costo": ["#rutanoe_precio"]
-            },
-            "ruta_sur": {
-                "nombre": ["#ruta_sur"],
-                "informacion": {
-                    "info1": ["#sur_info1"],
-                    "info2": ["#sur_info2"]
-                },
+            "ruta_noreste": ["#ruta_noreste"],
+            "ruta_noreste_descripcion": ["#ruta_noreste_descripcion"],
+            "rutane_llegada": ["#rutane_llegada"],
+            "rutane_salida": ["#rutane_salida"],
+            "rutane_regreso": ["#rutane_regreso"],
+            "rutane_llegada": "This route arrives at the UTCH at 6:55 am.",
+            "rutane_precio": ["#rutane_precio"],
+            "rutane_precio2":["#rutane_precio2"],
+            "rutane_info": ["#rutane_info"],
+
+            "rutane_parada1": ["#rutane_parada1"],
+            "rutane_parada2": ["#rutane_parada2"],
+            "rutane_parada3": ["#rutane_parada3"],
+            "rutane_parada4": ["#rutane_parada4"],
+            "rutane_parada5": ["#rutane_parada5"],
+            "rutane_parada6": ["#rutane_parada6"],
+            "rutane_parada7": ["#rutane_parada7"],
+            "rutane_parada8": ["#rutane_parada8"],
+            "rutane_parada9": ["#rutane_parada9"],
+            "rutane_parada10": ["#rutane_parada10"],
+            "rutane_parada11": ["#rutane_parada11"],
+            "rutane_parada12": ["#rutane_parada12"],
+            "showmap2": ["#showmap2"],
+    
+            
+            "nombre": ["#ruta_sur"],
+            
+            "info1": ["#sur_info1"],
+            "info2": ["#sur_info2"],
+                
                 "descripcion": {
                     "desc1": ["#rutasur_desc"],
                     "desc2": ["#rutasur_desc2"]
@@ -103,8 +106,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         "parada6": ["#rutasur_reg-parada6"]
                     }
                 }
-            }
-        };
+            };
+        
 
     // Función para actualizar el contenido
     function updateContent(language) {
