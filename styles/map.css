@@ -54,7 +54,7 @@ a {
     padding: 1px;
 }
 
-.barra-lateral ul li a {
+.barra-lateral a {
     text-decoration: none;
 }
 
@@ -71,5 +71,9 @@ hr {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    align-items: center;
+    text-align: center;
+}
+
+.barra-lateral footer ul li {
+    list-style-type: none;
 }

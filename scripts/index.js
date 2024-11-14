@@ -45,6 +45,8 @@ fetch("/rutas")
         nombre_ruta.textContent = info_ruta["ruta_nombre"];
         descripcion_ruta.textContent = info_ruta["descripcion"];
         // Aquí van guardados las paradas
+        const p = document.createElement("p");
+        p.textContent = "A continuación la lista de paradas:";
         const ol = document.createElement("ol");
         fetch("/rutas/paradas")
         .then(resultado => resultado.json())
@@ -54,7 +56,7 @@ fetch("/rutas")
             paradas_filtradas.forEach(parada => {
                 const li = document.createElement("li");
 
-                if (parada["parada_descripcion"]) {
+                if (parada["parada_descripcion"] && parada["parada_descripcion"] != "null") {
                     li.textContent = parada["parada_descripcion"];
                 }
                 ol.appendChild(li);
@@ -65,7 +67,7 @@ fetch("/rutas")
             rutas.classList.add("desactivado");
         }
 
-        ruta_info.append(nombre_ruta, descripcion_ruta, ol);
+        ruta_info.append(nombre_ruta, descripcion_ruta, p, ol);
 
         info.appendChild(ruta_info);
         info.appendChild(preview);

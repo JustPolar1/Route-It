@@ -3,11 +3,13 @@ const sidebar = document.getElementById('sidebar');
 const userButton = document.getElementById("usuario");
 const userMenu = document.getElementById("menu");
 
+/* Habilitar en producción
 const sesion = document.cookie;
 
 if (!sesion){
     window.location.href = "http://localhost:3000/pages/login.html"
 }
+*/
 
 toggleBtn.addEventListener('click', function() {
     sidebar.classList.toggle('hidden'); // Alterna la visibilidad de la barra lateral

@@ -15,9 +15,85 @@ utch_marker.openPopup();
 
 var marcadores = [];
 
+/** Quiero crear la siguiente estructura
+
+        <div class="barra-lateral" id="sidebar">
+            <ul id="rutas">
+                <!--Plantilla para las rutas-->
+                <li>
+                    <button class="pildora ruta" onclick="ruta_actual = ruta_norte_1">Ruta Norte 1</button>
+                </li>
+            <footer>
+                <ul>
+                    <li><a href="/queja">Quejas</a></li>
+                </ul>
+            </footer>
+        </div>
+ */
+
+const rutas_div = document.getElementById("rutas");
+
 var routingControl;
 var ruta_actual = []; // Para saber los waypoints que se están usando actualmente
+fetch("/rutas/paradas")
+.then(resultado => resultado.json())
+.then(paradas => {
+    const li = document.createElement("li");
+    pildora_ruta = document.createElement("button");
+    pildora_ruta.classList.add("pildora");
+    pildora_ruta.classList.add("ruta");
+    pildora_ruta.textContent = "Hola";
+    
+    // Agrupación de paradas por ID de ruta
+    const rutas = paradas.reduce((acc, parada) => {
+        const { ruta_fk, waypoint, parada_orden } = parada;
+    
+        // Si la ruta aún no existe en `acc`, inicializarla como un array vacío
+        if (!acc[ruta_fk]) acc[ruta_fk] = [];
+    
+        // Agregar la parada a la ruta correspondiente en el acumulador
+        acc[ruta_fk].push({
+            coordenada: L.latLng(waypoint.x, waypoint.y), // Convertir waypoint a L.latLng
+            orden: parada_orden, // Guardar parada_orden para ordenar después
+        });
+    
+        return acc; // Retornar el acumulador con todas las rutas agrupadas
+    }, {});
+    
+    // Ordenar paradas dentro de cada ruta por `parada_orden`
+    Object.keys(rutas).forEach(ruta => {
+        // Ordenar cada lista de paradas según `parada_orden`
+        rutas[ruta].sort((a, b) => a.orden - b.orden);
+    });
+    
+    console.log(rutas);
+    
+    li.append(pildora_ruta);
+    rutas_div.appendChild(li);
+})
+.then(() => {
+    /** Para crear la siguiente estructura
+                <footer>
+                    <ul>
+                        <li><a href="/queja">Quejas</a></li>
+                    </ul>
+                </footer>
+     */
+    const footer = document.createElement("footer");
+    const ul = document.createElement("ul");
+    const li = document.createElement("li");
+    const a = document.createElement("a");
 
+    a.setAttribute("href", "/queja");
+    a.textContent = "Comentarios";
+
+    li.append(a);
+    ul.append(li);
+    footer.append(ul);
+
+    rutas_div.appendChild(footer);
+});
+/*
 var ruta_norte_1 = [
     L.latLng(28.76468937404245, -106.16938378182661), // Alsuper Riberas
     L.latLng(28.70258687986386, -106.14192785268213), // Circuito universitario y Miguel el Grande
@@ -55,6 +131,7 @@ var ruta_sur_regreso = [
     L.latLng(28.62689755522281, -106.03041925721031), // Terminal Sur
     L.latLng(28.636038471134963, -106.04539948224136) // Pacheco y Pedro Meoqui
 ]
+*/
 
 // Apartado para event listener de los botones
 const botones_rutas = document.getElementById('sidebar').querySelectorAll('button');
