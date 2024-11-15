@@ -63,7 +63,11 @@ fetch("/rutas/paradas")
         pildora_ruta.classList.add("pildora");
         pildora_ruta.classList.add("ruta");
 
-        pildora_ruta.textContent = `Ruta: ${num_ruta}`;
+        fetch (`/rutas?ruta_id=${num_ruta}`).then(resultado => resultado.json())
+        .then(ruta_info => {
+            const { ruta_nombre } = ruta_info[0];
+            pildora_ruta.textContent = ruta_nombre; 
+        });
 
         li.append(pildora_ruta);
 
