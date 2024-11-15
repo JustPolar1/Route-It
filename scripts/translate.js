@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
           
             "ruta_norte": ["#ruta_norte"],
             "ruta_norte_descripcion": ["#ruta_norte_descripcion"],
+            "ruta_norte_info": ["#ruta_norte_info"],
             "rutan_parada1": ["#rutan_parada1"],
             "rutan_parada2": ["#rutan_parada2"],
             "rutan_parada3": ["#rutan_parada3"],
@@ -77,36 +78,30 @@ document.addEventListener('DOMContentLoaded', () => {
             "showmap2": ["#showmap2"],
     
             
-            "nombre": ["#ruta_sur"],
+            "ruta_suroeste": ["#ruta_suroeste"],
+            "suroesteinfo": ["#suroesteinfo"],
+            "suroesteprecio": ["#suroesteprecio"],
+            "suroestellegada": ["#suroestellegada"],
+            "suroesteparadas": ["#suroesteparadas"],
+            "suroe1": ["#suroe1"],
+            "suroe2": ["#suroe2"],
+            "suroe3": ["#suroe3"],
+            "suroe4": ["#suroe4"],
+            "showmap3": ["#showmap3"],
+
+            "ruta_sur": ["#ruta_sur"],
+            "sur_info1": ["#sur_info1"],
+            "sur_info2": ["#sur_info2"],
+            "rutasur_costo": ["#rutasur_costo"],
+            "rutasur_desc": ["#rutasur_desc"],
+            "rutasur_desc2": ["#rutasur_desc2"],
+            "rutasur_parada1": ["#rutasur_parada1"],
+            "rutasur_parada2": ["#rutasur_parada2"],
+            "rutasur_parada3": ["#rutasur_parada3"],
+            "rutasur_parada4": ["#rutasur_parada4"],
+            "showmap4": ["#showmap4"]
             
-            "info1": ["#sur_info1"],
-            "info2": ["#sur_info2"],
-                
-                "descripcion": {
-                    "desc1": ["#rutasur_desc"],
-                    "desc2": ["#rutasur_desc2"]
-                },
-                "paradas": {
-                    "parada1": ["#rutasur_parada1"],
-                    "parada2": ["#rutasur_parada2"],
-                    "parada3": ["#rutasur_parada3"],
-                    "parada4": ["#rutasur_parada4"]
-                },
-                "salida": ["#rutasur_inicio"],
-                "costo": ["#rutasur_costo"],
-                "regreso": {
-                    "costo": ["#rutasur_costo_reg"],
-                    "especial": ["#rutasur_reg-espc"],
-                    "paradas": {
-                        "parada1": ["#rutasur_reg-parada1"],
-                        "parada2": ["#rutasur_reg-parada2"],
-                        "parada3": ["#rutasur_reg-parada3"],
-                        "parada4": ["#rutasur_reg-parada4"],
-                        "parada5": ["#rutasur_reg-parada5"],
-                        "parada6": ["#rutasur_reg-parada6"]
-                    }
-                }
-            };
+    };
         
 
     // Función para actualizar el contenido
