@@ -46,7 +46,7 @@ fetch("/rutas")
         descripcion_ruta.textContent = info_ruta["descripcion"];
         // Aquí van guardados las paradas
         const p = document.createElement("p");
-        p.textContent = "A continuación la lista de paradas:";
+        p.textContent = "Lista de paradas populares:";
         const ol = document.createElement("ol");
         fetch("/rutas/paradas")
         .then(resultado => resultado.json())

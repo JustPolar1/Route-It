@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>pagina principal</title>
+        <link href="\styles\estilos.css" rel="stylesheet">
+        <link href="\styles\main.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+    <body>
+        <nav>
+            <div class="barra-superior">
+                <ul class="indices-izq">
+                    <li><a href="javascript:void(0);" id="toggle-btn"><i style="display: none;" class="fas fa-bars"></i></a></li>
+                </ul>
+                <h1><a href="/">UTCH Rutas</a></h1>
+                <ul class="indices-der">
+                    <li id="usuario">
+                        <a href="javascript:void(0);"><i class="fas fa-user"></i></a>
+                        <div class="menu_desplegable" id="menu">
+                            <ul>
+                                <li>
+                                    <button class="pildora">Cambiar idioma</button>
+                                </li>
+                                <li>
+                                    <button class="pildora">Configuración</button>
+                                </li>
+                                <li>
+                                    <button class="pildora" onclick="fetch('/auth/logout', {
+                                        method: 'POST', // Usar POST para cerrar sesión
+                                        credentials: 'include' // Esto incluye las cookies en la solicitud
+                                    }).then(response => {
+                                        if (response.redirected) {
+                                            window.location.href = response.url; // Redirigir si la respuesta indica redirección
+                                        }
+                                    })">Cerrar sesión</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>     
+            </div>
+        </nav>
+        <div class="contenido">
+            <div class="perfil">
+                <div id="foto">
+                    <img src="https://as1.ftcdn.net/v2/jpg/03/53/11/00/1000_F_353110097_nbpmfn9iHlxef4EDIhXB1tdTD0lcWhG9.jpg">
+                </div>
+                <h2>Avril Alexa Caraveo Veleta</h2>
+            </div>
+            <!--Solo Si tiene una-->
+            <h2>Ruta Preferida</h2>
+            <h2>Tus comentarios</h2>
+            <div class="comentario">
+                <h3>Ruta Norte (7 de octubre del 2024)</h3>
+                <p>La otra vez casi me caigo porque había un agujero en el camión</p>
+            </div>
+            <div class="comentario">
+                <h3>Ruta Sur (26 de septiembre del 2024)</h3>
+                <p>El camión estaba demasiado lleno, tanto que me dejaron y tuve que venirme en un camión urbano</p>
+            </div>
+        </div>
+        <script src="\scripts\main.js"></script>
+        <script src="/scripts/profile.js"></script>
+    </body>
+</html>
+    

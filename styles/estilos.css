@@ -263,10 +263,34 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/*Todo lo que tenga que ver con perfil*/
+.perfil {
+    display: flex;
+    color: black;
+    background-color: white;
+    border-radius: 999px;
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    margin: 0;
+    gap: 20px;
+}
 
+#foto img {
+    width: 80px;
+    border-radius: 100%;
+}
 
+.comentario {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    width: 70%;
+    padding: 20px;
+}
 
-
-
-
-
+.comentario h3 {
+    margin: 0;
+}
