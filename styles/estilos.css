@@ -275,6 +275,7 @@ section {
     padding: 10px;
     margin: 0;
     gap: 20px;
+    align-items: center;
 }
 
 #foto img {
