@@ -87,6 +87,7 @@ h1 {
     padding: 20px;
 }
 
+
 .rutas.desactivado {
     color: lightslategray;
 }
@@ -293,4 +294,8 @@ section {
 
 .comentario h3 {
     margin: 0;
+}
+
+.contenido {
+    margin-bottom: 10px;
 }
