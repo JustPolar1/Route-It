@@ -47,10 +47,7 @@ var ruta_sur_ida = [
 ]
 
 var ruta_sur2 = [
-    L.latLng(28.635263, -106.044502), // Punto de inicio
-    L.latLng(28.6266899,-106.0314196), // El primer punto es el inicio, los demás son paradas
-    L.latLng(28.620831, -106.029129),
-    L.latLng(28.621774, -106.046270), 
+    L.latLng(28.62035661347746, -106.03111531931404), // Punto de inicio
     L.latLng(28.6015419,-106.1026966),
     L.latLng(28.647509, -106.133202), // El último punto es la parada final
     L.latLng(28.642632, -106.146909) // Destino final, UTCh
