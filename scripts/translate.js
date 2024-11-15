@@ -99,7 +99,19 @@ document.addEventListener('DOMContentLoaded', () => {
             "rutasur_parada2": ["#rutasur_parada2"],
             "rutasur_parada3": ["#rutasur_parada3"],
             "rutasur_parada4": ["#rutasur_parada4"],
-            "showmap4": ["#showmap4"]
+            "showmap4": ["#showmap4"],
+
+            "rutasur_regreso": ["#rutasur_regreso"],
+            "rutasur_reg-espc": ["#rutasur_reg-espc"],
+            "rutasur_inicio": ["#rutasur_inicio"],
+            "rutasur_reg_costo": ["#rutasur_reg_costo"],
+            "rutasurreginfo": ["#rutasurreginfo"],
+            "rutasur_reg_parada1": ["#rutasur_reg_parada1"],
+            "rutasur_reg_parada2": ["#rutasur_reg_parada2"],
+            "rutasur_reg_parada3": ["#rutasur_reg_parada3"],
+            "rutasur_reg_parada4": ["#rutasur_reg_parada4"],
+            "rutasur_reg_parada5": ["#rutasur_reg_parada5"],
+            "rutasur_reg_parada6": ["#rutasur_reg_parada6"]
             
     };
         

@@ -67,17 +67,17 @@
     "rutasur_parada3": "St. Neri Santos.",
     "rutasur_parada4": "Ave. Independencia.",
 
-    "rutasur_regreso": "Ruta Sur de regreso de la UTCH",
-    "rutasur_reg-espc": "Esta ruta de regreso de la UTCH comienza su trayecto en la UTCH a las 2:05 pm.",
-    "rutasur_inicio": "Esta ruta comienza su trayecto a las 2:05 pm.",
-    "rutasur_reg_costo": "La ruta Sur tiene un costo de $20.00 pesos mx.",
-    "rutasurreginfo": "Sus paradas son las siguientes:",
-    "rutasur_reg_parada1": "Periférico frente a Fashion mall.",
+    "rutasur_regreso": "South route leaving from UTCH",
+    "rutasur_reg-espc": "This route starts its journey in the UTCH",
+    "rutasur_inicio": "This route start his journey at 2:05 pm.",
+    "rutasur_reg_costo": "This bus route has a cost of $20.00 pesos mx.",
+    "rutasurreginfo": "His stops are the next:",
+    "rutasur_reg_parada1": "Periférico in front of Fashion mall.",
     "rutasur_reg_parada2": "Glorieta tricentenario.",
-    "rutasur_reg_parada3": "Vialidad CH-P y Fuentes Mares.",
-    "rutasur_reg_parada4": "Fuentes Mares y Nva. España.",
-    "rutasur_reg_parada5": "Terminar Sur.",
-    "rutasur_reg_parada6": "Pacheco y Pedro Meoqui."
+    "rutasur_reg_parada3": "Vialidad CH-P & Fuentes Mares.",
+    "rutasur_reg_parada4": "Fuentes Mares & Nva. España.",
+    "rutasur_reg_parada5": "South terminal",
+    "rutasur_reg_parada6": "Pacheco & Pedro Meoqui."
   },
 
   "es": {
@@ -146,7 +146,7 @@
     "rutasur_parada4": "Av. Independencia.", 
 
     "rutasur_regreso": "Ruta Sur de regreso de la UTCH",
-    "rutasur_reg-espc": "Esta ruta de regreso de la UTCH comienza su trayecto en la UTCH a las 2:05 pm.",
+    "rutasur_reg-espc": "Esta ruta de regreso de la UTCH comienza su trayecto en la UTCH",
     "rutasur_inicio": "Esta ruta comienza su trayecto a las 2:05 pm.",
     "rutasur_reg_costo": "La ruta Sur tiene un costo de $20.00 pesos mx.",
     "rutasurreginfo": "Sus paradas son las siguientes:",
@@ -154,7 +154,7 @@
     "rutasur_reg_parada2": "Glorieta tricentenario.",
     "rutasur_reg_parada3": "Vialidad CH-P y Fuentes Mares.",
     "rutasur_reg_parada4": "Fuentes Mares y Nva. España.",
-    "rutasur_reg_parada5": "Terminar Sur.",
+    "rutasur_reg_parada5": "Terminal Sur.",
     "rutasur_reg_parada6": "Pacheco y Pedro Meoqui."
   }
 }
