@@ -6,11 +6,11 @@ function activarAnimacion() {
         const rect = section.getBoundingClientRect();
         const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
 
-        // Si la sección es visible y no tiene la clase fade-in, añadir la clase
-        if (isVisible && !section.classList.contains("fade-in")) {
+        // Si la sección es visible, añadir la clase 'fade-in'
+        if (isVisible) {
             section.classList.add("fade-in");
 
-            // Eliminar la clase 'fade-in' después de que la animación haya terminado
+            // Quitar la clase después de la animación para que pueda repetirse
             section.addEventListener("animationend", () => {
                 section.classList.remove("fade-in");
             });
@@ -20,5 +20,6 @@ function activarAnimacion() {
 
 // Escuchar el evento scroll para activar la función
 window.addEventListener("scroll", activarAnimacion);
+
 // Llamar a la función al cargar la página para activar animaciones visibles
 activarAnimacion();
