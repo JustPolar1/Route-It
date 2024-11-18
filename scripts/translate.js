@@ -127,7 +127,17 @@ document.addEventListener('DOMContentLoaded', () => {
             "ruta_norte_2": ["#ruta_norte_2"],
             "ruta_sur_ida": ["#ruta_sur_ida"],
             "ruta_sur_regreso": ["#ruta_sur_regreso"],
-            "quejas": ["#quejas"]
+            "quejas": ["#quejas"],
+
+            "abouttitle": ["#abouttitle"],
+            "vision2": ["#vision2"],
+            "vision2text": ["#vision2text"],
+            "mision2": ["#mision2"],
+            "mision2text": ["#mision2text"],
+            "proyect_desc": ["#proyect_desc"],
+            "proyect_desctext": ["#proyect_desctext"],
+            "frases2": ["#frases2"],
+            "about2": ["#about2"]
             
     };
         
