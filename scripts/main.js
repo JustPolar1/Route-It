@@ -1,7 +1,9 @@
+document.addEventListener('DOMContentLoaded', () => {
 const toggleBtn = document.getElementById('toggle-btn'); 
 const sidebar = document.getElementById('sidebar');
 const userButton = document.getElementById("usuario");
 const userMenu = document.getElementById("menu");
+var buttons = document.querySelectorAll('.mostrarmas'); 
 
 /* Habilitar en producción
 const sesion = document.cookie;
@@ -20,15 +22,23 @@ userButton.addEventListener('click', function(event) {
     userMenu.style.display = (userMenu.style.display === 'flex') ? 'none' : 'block'; // Alternar menú
 });
 
+
 window.addEventListener('click', function(event) {
     if (!userButton.contains(event.target)) {
         userMenu.style.display = 'none'; 
     }
 });
 
-const languageSwitcher = document.getElementById('languageSwitcher');
-
-userButton.addEventListener('click', function (event){
-    event.preventDefault
-    console.log('idioma cambiado');
 });
+buttons.forEach(function(button) { 
+    button.addEventListener('click', function() { 
+    var moreContent = this.previousElementSibling; 
+
+    if (moreContent.style.display === 'none') { 
+        moreContent.style.display = 'block'; 
+        this.textContent = 'Mostrar menos'; 
+    } else { 
+        moreContent.style.display = 'none'; 
+        this.textContent = 'Mostrar más'; } })
+    });
+

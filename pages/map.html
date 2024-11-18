@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>UTCH Rutas</title>
+        <title id="titulo3">UTCH Rutas</title>
         <link href="/styles/main.css" rel="stylesheet">
         <link href="/styles/map.css" rel="stylesheet">
         
@@ -23,23 +23,26 @@
                 <ul class="indices-izq">
                     <li><a href="javascript:void(0);" id="toggle-btn"><i class="fas fa-bars"></i></a></li>
                 </ul>
-                <h1><a href="/">UTCH Rutas</a></h1>
+                <h1 id="titulo8"><a href="/">UTCH Rutas</a></h1>
                 <ul class="indices-der">
                     <li id="usuario">
                         <a href="javascript:void(0);"><i class="fas fa-user"></i></a>
                         <div class="menu_desplegable" id="menu">
                             <ul>
                                 <li>
-                                    <a href="/perfil"><button class="pildora" type="button">Perfil</button></a>
+                                    <a href="/perfil"><button id="profile_link" class="pildora" type="button">Perfil</button></a>
                                 </li>
                                 <li>
-                                    <button class="pildora">Cambiar idioma</button>
+                                    <select class="pildora" id="languageSwitcher">Cambiar idioma
+                                        <option value="es" id="esp">Español</option>
+                                        <option value="en" id="eng">Inglés</option>
+                                    </select>
                                 </li>
                                 <li>
-                                    <button class="pildora">Configuración</button>
+                                    <button class="pildora" id="Link_configuracion2">Configuración</button>
                                 </li>
                                 <li>
-                                    <button class="pildora">Cerrar sesión</button>
+                                    <button class="pildora" id="Link_cerrar_sesion2">Cerrar sesión</button>
                                 </li>
                             </ul>
                         </div>
@@ -51,7 +54,7 @@
         <div class="barra-lateral" id="sidebar">
             <ul id="rutas">
                 <li>
-                    <h3>Rutas</h3>
+                    <h3 id="rutas">Rutas</h3>
                 </li>
                 <!--Plantilla para las rutas-->
         </div>
@@ -67,5 +70,6 @@
         <!-- Scripts locales -->
         <script src="/scripts/map.js"></script>
         <script src="/scripts/main.js"></script>
+        <script src="/scripts/translate.js"></script>
     </body>
 </html>
