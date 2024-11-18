@@ -88,7 +88,13 @@
     "rutasur_reg_parada3": "Vialidad CH-P & Fuentes Mares.",
     "rutasur_reg_parada4": "Fuentes Mares & Nva. España.",
     "rutasur_reg_parada5": "South terminal",
-    "rutasur_reg_parada6": "Pacheco & Pedro Meoqui."
+    "rutasur_reg_parada6": "Pacheco & Pedro Meoqui.",
+
+    "rutas": "Routes",
+    "ruta_norte_1": "North route 1",
+    "ruta_norte_2": "North route 2",
+    "ruta_sur_ida": "South route returning to the utch",
+    "ruta_sur_regreso": "South route leaving the utch"
   },
 
   "es": {
@@ -177,6 +183,13 @@
     "rutasur_reg_parada3": "Vialidad CH-P y Fuentes Mares.",
     "rutasur_reg_parada4": "Fuentes Mares y Nva. España.",
     "rutasur_reg_parada5": "Terminal Sur.",
-    "rutasur_reg_parada6": "Pacheco y Pedro Meoqui."
+    "rutasur_reg_parada6": "Pacheco y Pedro Meoqui.",
+
+    "rutas": "Rutas",
+    "ruta_norte_1": "Ruta Norte 1",
+    "ruta_norte_2": "Ruta Norte 2",
+    "ruta_sur_ida": "Ruta sur de ida",
+    "ruta_sur_regreso": "Ruta sur de regreso"
+    
   }
 }

@@ -45,7 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
             "profile_link": ["#profile_link"],
             "profile_link2": ["#profile_link2"],
             "link_configuracion": ["#link_configuracion"],
+            "link_configuracion2": ["#link_configuracion2"],
             "link_cerrar_sesion": ["#link_cerrar_sesion"],
+            "link_cerrar_sesion2": ["#link_cerrar_sesion2"],
         
           
             "ruta_norte": ["#ruta_norte"],
@@ -118,7 +120,13 @@ document.addEventListener('DOMContentLoaded', () => {
             "rutasur_reg_parada3": ["#rutasur_reg_parada3"],
             "rutasur_reg_parada4": ["#rutasur_reg_parada4"],
             "rutasur_reg_parada5": ["#rutasur_reg_parada5"],
-            "rutasur_reg_parada6": ["#rutasur_reg_parada6"]
+            "rutasur_reg_parada6": ["#rutasur_reg_parada6"],
+
+            "rutas": ["#rutas"],
+            "ruta_norte_1": ["#ruta_norte_1"],
+            "ruta_norte_2": ["#ruta_norte_2"],
+            "ruta_sur_ida": ["#ruta_sur_ida"],
+            "ruta_sur_regreso": ["#ruta_sur_regreso"]
             
     };
         
