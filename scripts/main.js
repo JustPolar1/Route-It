@@ -22,3 +22,17 @@ window.addEventListener('click', function(event) {
 });
 
 });
+buttons.forEach(function(button) { 
+    button.addEventListener('click', function() { 
+    var moreContent = this.previousElementSibling; 
+
+    if (moreContent.style.display === 'none') { 
+        moreContent.style.display = 'block'; 
+        this.textContent = 'Mostrar menos'; 
+    } else { 
+        moreContent.style.display = 'none'; 
+        this.textContent = 'Mostrar más'; } })
+    });
+
+});
+

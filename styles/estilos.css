@@ -224,7 +224,7 @@ textarea {
 
 /*Diseño para about us */
 
-.container {
+#container {
     height: 100vh; /* Ocupa el 100% del alto de la ventana */
     display: flex;
     flex-direction: column;
@@ -237,7 +237,7 @@ textarea {
     align-items: center;
     background-image: linear-gradient(90deg, #0900ba 0%, #00d4ff 100%);
     justify-content: space-between;
-    padding: 15px;
+    padding: 35px;
     position: fixed;
     top: 0;
     left: 0;
@@ -261,6 +261,22 @@ textarea {
     margin-bottom: 20px;
 }
 
+#descripcion{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#vision{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+#mision{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 /* Animación para aparecer desde abajo */
 @keyframes fadeInUp {
     from {
@@ -275,23 +291,23 @@ textarea {
 
 /* Clase que activa la animación */
 .fade-in {
-    opacity: 0;
-    animation: fadeInUp 1s ease forwards;
+    opacity: 0; /* Comienza invisible */
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease forwards; /* Duración y suavizado */
 }
 
-/* Estilos opcionales para las secciones y divs */
-section, div {
+.fade-in.visible {
+    opacity: 1; /* Aparece */
+    transform: translateY(0); /* Se mueve a su posición final */
+}
+
+/* Añadir un espacio entre secciones */
+section {
     margin-bottom: 50px;
     padding: 20px;
     border-radius: 8px;
     background-color: #f9f9f9;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-
-
-
-
-
 
 
