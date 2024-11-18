@@ -61,8 +61,7 @@ fetch("/rutas/paradas")
 
         fetch(`/rutas?ruta_id=${ruta}`).then(resultado => resultado.json())
         .then(ruta_info => {
-            const { ruta_nombre } = ruta_info[0];
-            pildora_ruta.textContent = ruta_nombre;  // Ya tiene el nombre en español
+            pildora_ruta.textContent = ruta_info.ruta_nombre;  // Ya tiene el nombre en español
         });
 
         li.append(pildora_ruta);

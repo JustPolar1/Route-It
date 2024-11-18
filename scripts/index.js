@@ -43,7 +43,7 @@ fetch("/rutas")
         const nombre_ruta = document.createElement("h2");
 
         nombre_ruta.textContent = info_ruta["ruta_nombre"];
-        descripcion_ruta.textContent = info_ruta["descripcion"];
+        descripcion_ruta.textContent = info_ruta["ruta_descripcion"];
         // Aquí van guardados las paradas
         const p = document.createElement("p");
         p.textContent = "Lista de paradas populares:";
@@ -56,14 +56,14 @@ fetch("/rutas")
             paradas_filtradas.forEach(parada => {
                 const li = document.createElement("li");
 
-                if (parada["parada_descripcion"] && parada["parada_descripcion"] != "null") {
+                if (parada["parada_descripcion"] && parada["parada_descripcion"] != null) {
                     li.textContent = parada["parada_descripcion"];
+                    ol.appendChild(li);
                 }
-                ol.appendChild(li);
             });
         });
 
-        if (!info_ruta["estatus"]){
+        if (!info_ruta["ruta_estatus"]){
             rutas.classList.add("desactivado");
         }
 
