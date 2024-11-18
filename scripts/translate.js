@@ -36,7 +36,14 @@ document.addEventListener('DOMContentLoaded', () => {
     let elementsMap = {
             "tituloprincipal": ["#tituloprincipal"],
             "titulo2": ["#titulo2"],
+            "titulo3": ["#titulo3"],
+            "titulo4": ["#titulo4"],
+            "titulo5": ["#titulo5"],
+            "titulo6": ["#titulo6"],
+            "titulo7": ["#titulo7"],
+            "titulo8": ["#titulo8"],
             "profile_link": ["#profile_link"],
+            "profile_link2": ["#profile_link2"],
             "link_configuracion": ["#link_configuracion"],
             "link_cerrar_sesion": ["#link_cerrar_sesion"],
         
