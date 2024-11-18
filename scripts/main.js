@@ -34,5 +34,3 @@ buttons.forEach(function(button) {
         this.textContent = 'Mostrar más'; } })
     });
 
-});
-
