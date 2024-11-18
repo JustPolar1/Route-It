@@ -126,7 +126,8 @@ document.addEventListener('DOMContentLoaded', () => {
             "ruta_norte_1": ["#ruta_norte_1"],
             "ruta_norte_2": ["#ruta_norte_2"],
             "ruta_sur_ida": ["#ruta_sur_ida"],
-            "ruta_sur_regreso": ["#ruta_sur_regreso"]
+            "ruta_sur_regreso": ["#ruta_sur_regreso"],
+            "quejas": ["#quejas"]
             
     };
         

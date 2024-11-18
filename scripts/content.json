@@ -94,7 +94,12 @@
     "ruta_norte_1": "North route 1",
     "ruta_norte_2": "North route 2",
     "ruta_sur_ida": "South route returning to the utch",
-    "ruta_sur_regreso": "South route leaving the utch"
+    "ruta_sur_regreso": "South route leaving the utch",
+    "quejas": "Complains",
+
+    "abouttitle": "About us",
+    "vision": "Our vision",
+    "Mision": "Our mision"
   },
 
   "es": {
@@ -189,7 +194,8 @@
     "ruta_norte_1": "Ruta Norte 1",
     "ruta_norte_2": "Ruta Norte 2",
     "ruta_sur_ida": "Ruta sur de ida",
-    "ruta_sur_regreso": "Ruta sur de regreso"
+    "ruta_sur_regreso": "Ruta sur de regreso",
+    "quejas": "Quejas"
     
   }
 }
