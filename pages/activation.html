@@ -22,18 +22,18 @@
         </nav>
 
         <div class="inicio">
-            <form id="register_form" action="/perfil" method="post">
+            <form id="register_form" action="/activation" method="post">
                 <h2 id="titulo">Activación de cuenta</h2>
                 <p>Ya casi estás listo, solo necesitamos lo siguiente para activar tu cuenta</p>
                 <label>Escribe tu nombre</label>
-                <input name="nombre" type="email" placeholder="Nombre" required>
+                <input name="nombre" type="text" placeholder="Nombre" required>
                 <label>Selecciona tu organización:</label>
-                <select name="cars" id="cars" required>
-                    <option value="1">UTCh</option>
-                    <option value="2">Maquila</option>
+                <select name="organizacion" id="organizaciones" required>
                 </select>
+                <button id="baton" type="submit">Enviar</button>
+
             </form>
         </div>
-        <script src="/scripts/forms.js"></script>
+        <script src="/scripts/activation.js"></script>
     </body>
 </html>
