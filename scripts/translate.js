@@ -44,8 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
             "titulo8": ["#titulo8"],
             "profile_link": ["#profile_link"],
             "profile_link2": ["#profile_link2"],
-            "link_configuracion": ["#link_configuracion"],
-            "link_configuracion2": ["#link_configuracion2"],
             "link_cerrar_sesion": ["#link_cerrar_sesion"],
             "link_cerrar_sesion2": ["#link_cerrar_sesion2"],
         

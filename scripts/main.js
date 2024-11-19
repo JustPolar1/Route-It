@@ -21,7 +21,7 @@ window.addEventListener('click', function(event) {
     }
 });
 
-});
+
 buttons.forEach(function(button) { 
     button.addEventListener('click', function() { 
     var moreContent = this.previousElementSibling; 
@@ -33,4 +33,5 @@ buttons.forEach(function(button) {
         moreContent.style.display = 'none'; 
         this.textContent = 'Mostrar más'; } })
     });
+});
 
