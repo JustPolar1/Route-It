@@ -23,7 +23,7 @@
                 <ul class="indices-izq">
                     <li><a href="javascript:void(0);" id="toggle-btn"><i class="fas fa-bars"></i></a></li>
                 </ul>
-                <h1 id="titulo8"><a href="/">UTCH Rutas</a></h1>
+                <h1 id="titulo8"><a href="/">Route-It</a></h1>
                 <ul class="indices-der">
                     <li id="usuario">
                         <a href="javascript:void(0);"><i class="fas fa-user"></i></a>
@@ -33,16 +33,20 @@
                                     <a href="/perfil"><button id="profile_link" class="pildora" type="button">Perfil</button></a>
                                 </li>
                                 <li>
-                                    <select class="pildora" id="languageSwitcher">Cambiar idioma
+                                    <select class="pildora" id="languageSwitcher">
                                         <option value="es" id="esp">Español</option>
                                         <option value="en" id="eng">Inglés</option>
                                     </select>
                                 </li>
                                 <li>
-                                    <button class="pildora" id="Link_configuracion2">Configuración</button>
-                                </li>
-                                <li>
-                                    <button class="pildora" id="Link_cerrar_sesion2">Cerrar sesión</button>
+                                    <button class="pildora" id="Link_cerrar_sesion2" onclick="fetch('/auth/logout', {
+                                        method: 'POST', // Usar POST para cerrar sesión
+                                        credentials: 'include' // Esto incluye las cookies en la solicitud
+                                    }).then(response => {
+                                        if (response.redirected) {
+                                            window.location.href = response.url; // Redirigir si la respuesta indica redirección
+                                        }
+                                    })">Cerrar sesión</button>
                                 </li>
                             </ul>
                         </div>
@@ -57,6 +61,7 @@
                     <h3 id="rutas">Rutas</h3>
                 </li>
                 <!--Plantilla para las rutas-->
+            </ul>
         </div>
 
         <div id="map"></div>
@@ -68,6 +73,7 @@
         <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
         
         <!-- Scripts locales -->
+        <script src="/scripts/animation.js"></script>
         <script src="/scripts/map.js"></script>
         <script src="/scripts/main.js"></script>
         <script src="/scripts/translate.js"></script>

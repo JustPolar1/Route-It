@@ -1,6 +1,5 @@
+// animations.js
 document.addEventListener("DOMContentLoaded", () => {
-    const elements = document.querySelectorAll("section, .info, .preview, .pildora_boton"); // Selecciona elementos a animar
-
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -17,7 +16,22 @@ document.addEventListener("DOMContentLoaded", () => {
         threshold: 0 // Activa la animación cuando el 10% del elemento es visible
     });
 
-    elements.forEach(element => {
-        observer.observe(element);
+    // Función que observa los elementos recién creados
+    function observeElements() {
+        const elements = document.querySelectorAll("section, .perfil, .comentario, .info, .preview, .pildora_boton, .rutas, .rutas_info, .contenido");
+        elements.forEach(element => {
+            observer.observe(element); // Observa los elementos
+        });
+    }
+
+    // Observa el DOM por cambios, como la adición de nuevos elementos
+    const mutationObserver = new MutationObserver(() => {
+        observeElements(); // Llamar a la función de observación cada vez que haya un cambio en el DOM
     });
+
+    // Configura el MutationObserver para observar el contenedor de contenido
+    mutationObserver.observe(document.body, { childList: true, subtree: true });
+
+    // Observa los elementos al cargar la página
+    observeElements();
 });
