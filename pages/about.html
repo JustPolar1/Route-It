@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head> <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title id="abouttitle">Sobre nosotros</title>
         <link href="/styles/main.css" rel="stylesheet">
-        <link href="/styles/estilos.css" rel="stylesheet">
+        <link href="/styles/about.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">    
     </head>
 
-    <body style="position: static;">
+    <body>
         <nav>
-            <div class="barra-superior" style="position: relative;">
-                <ul class="indices-izq">
-                    <li><a href="javascript:void(0);" id="toggle-btn"><i style="display: none;" class="fas fa-bars"></i></a></li>
+            <div class="barra-superior">
+                <ul class=".indices-izq">
+                    <li>
+                        <h1 id="titulo3"><a href="/pages/index.html">UTCH Rutas</a></h1>
+                    </li>
                 </ul>
-                <h1 id="titulo3"><a href="/pages/index.html">UTCH Rutas</a></h1>
                 <ul class="indices-der">
                     <li id="usuario">
                         <a href="javascript:void(0);"><i class="fas fa-cog"></i></a>
@@ -32,7 +34,6 @@
             </div>
         </nav>
         <div class="container">
-
             <section id="vision">
                 <h2 id="vision2">Nuestra Visión</h2>
                 <p id="vision2text">Ser la principal plataforma de referencia para el transporte estudiantil, ayudando a los estudiantes a llegar a sus destinos de forma rápida, segura y confiable.</p>
@@ -58,11 +59,13 @@
                 <h2 id="about2">Sobre Nosotros</h2>
                 <p id="about2_text">Somos un grupo de estudiantes comprometidos de la Universidad Tecnológica de Chihuahua, apasionados por la tecnología y el bienestar estudiantil. Nuestra meta es apoyar a nuestros compañeros con soluciones digitales innovadoras que mejoren su vida académica.</p>
             </section>
-            <button id="ingreso"><a href="/pages/login.html"> Ingresar a la pagina</a></button>        
+            <footer>
+                <h2>¡Entra a la página ahora!</h2>
+                <a href="/pages/login.html"><button id="ingreso">Login</button></a>        
+            </footer>
         </div>
         <script src="/scripts/animation.js"></script>
         <script src="/scripts/main.js"></script>
         <script src="/scripts/translate.js"></script>
     </body>
-    
 </html>

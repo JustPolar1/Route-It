@@ -1,0 +1,62 @@
+/*Diseño para about us */
+.barra-superior {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+}
+
+#titulo3 {
+    margin: 0 15px;
+}
+
+body {
+    position: relative;
+    background-image: repeating-linear-gradient(rgb(224, 191, 251), rgb(87, 87, 123)); 
+}
+
+#container {
+    height: 100vh; /* Ocupa el 100% del alto de la ventana */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-content: center;
+}
+
+/* Añadir un espacio entre secciones */
+section, footer {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    background-color: #0000004a;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#ingreso {
+    background-color: #0041F5; 
+    border: none; 
+    color: white; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    font-size: 16px;  
+    cursor: pointer; 
+    border-radius: 8px; 
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+#ingreso:hover {
+    background-color: #1719a9;
+    transform: scale(1.1); 
+}
+
+#ingreso a {
+    color: white; 
+    text-decoration: none; 
+}
