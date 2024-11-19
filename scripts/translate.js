@@ -135,7 +135,12 @@ document.addEventListener('DOMContentLoaded', () => {
             "proyect_desc": ["#proyect_desc"],
             "proyect_desctext": ["#proyect_desctext"],
             "frases2": ["#frases2"],
-            "about2": ["#about2"]
+            "about2": ["#about2"],
+
+            "notrute1": ["#notrute1"],
+            "notrute2": ["#notrute2"],
+            "notrute3": ["#notrute3"],
+            "notrute4": ["#notrute4"]
             
     };
         

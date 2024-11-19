@@ -102,7 +102,12 @@
     "proyect_desc": "Project description",
     "proyect_desctext": "UTCH Rutas is a platform designed to offer students an efficient solution to know the transportation schedules and routes to the Technological University of Chihuahua.",
     "frases2": "Phrases that inspired us",
-    "about2": "About us"
+    "about2": "About us",
+
+    "notrute1": "North Route 1",
+    "notrute2": "North Route 2",
+    "notrute3": "South route",
+    "notrute4": "South route departure"
   },
 
   "es": {
@@ -205,7 +210,12 @@
     "proyect_desc": "Descripción del Proyecto",
     "proyect_desctext": "UTCH Rutas es una plataforma diseñada para ofrecer a los estudiantes una solución eficiente para conocer los horarios y rutas de transporte hacia la Universidad Tecnológica de Chihuahua.",
     "frases2": "Frases que nos Inspiran",
-    "about2": "Sobre nosotros"
+    "about2": "Sobre nosotros",
+
+    "notrute1": "Ruta Norte 1",
+    "notrute2": "Ruta Norte 2",
+    "notrute3": "Ruta sur de ida",
+    "notrute4": "Ruta sur de regreso"
     
   }
 }
