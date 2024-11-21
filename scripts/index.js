@@ -15,7 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
             boton.classList.add("pildora_boton");
 
             const span = document.createElement("span");
-            span.textContent = "Ver en el mapa";
+            // Operación ternaria para cambiar el lenguaje del botón
+            span.textContent = lang === "es" ? "Ver en el mapa" : "See on the map";
 
             const i = document.createElement("i");
             i.classList.add("fa");
@@ -50,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
             descripcion_ruta.textContent = info_ruta["ruta_descripcion"];
             // Aquí van guardados las paradas
             const p = document.createElement("p");
-            p.textContent = "Lista de paradas populares:";
+            p.textContent = lang === "es" ? "Lista de paradas populares:" : "Popular bus stops:";
             const ol = document.createElement("ol");
             fetch("/rutas/paradas")
             .then(resultado => resultado.json())
