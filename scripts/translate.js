@@ -37,8 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
             "tituloprincipal": ["#tituloprincipal"],
             "profile_link": ["#profile_link"],
             "profile_link2": ["#profile_link2"],
-            "link_configuracion": ["#link_configuracion"],
-            "link_configuracion2": ["#link_configuracion2"],
             "link_cerrar_sesion": ["#link_cerrar_sesion"],
             "link_cerrar_sesion2": ["#link_cerrar_sesion2"],
         
@@ -52,7 +50,12 @@ document.addEventListener('DOMContentLoaded', () => {
             "proyect_desc": ["#proyect_desc"],
             "proyect_desctext": ["#proyect_desctext"],
             "frases2": ["#frases2"],
-            "about2": ["#about2"]
+            "about2": ["#about2"],
+
+            "notrute1": ["#notrute1"],
+            "notrute2": ["#notrute2"],
+            "notrute3": ["#notrute3"],
+            "notrute4": ["#notrute4"]
             
     };
         

@@ -107,28 +107,28 @@ body {
     color: rgb(221, 221, 221);
 }
 
-#ingreso {
-    background-color: #0900ba; 
-    border: none; 
-    color: white; 
-    padding: 10px 20px; 
-    text-align: center; 
-    text-decoration: none; 
-    display: inline-block;
-    font-size: 16px; 
-    margin: 10px 0; 
-    cursor: pointer; 
-    border-radius: 8px; 
-    transition: background-color 0.3s, transform 0.2s; 
+
+/* Animación para aparecer desde abajo */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-#ingreso:hover {
-    background-color: #1719a9;
-    transform: scale(1.1); 
+/* Clase que activa la animación */
+.fade-in {
+    opacity: 0; /* Comienza invisible */
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease forwards; /* Duración y suavizado */
 }
 
-#ingreso a {
-    color: white; 
-    text-decoration: none; 
+.fade-in.visible {
+    opacity: 1; /* Aparece */
+    transform: translateY(0); /* Se mueve a su posición final */
 }
 

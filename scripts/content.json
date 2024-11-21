@@ -4,9 +4,6 @@
     "profile_link": "Profile",
     "profile_link2": "Profile",
     "profile_link3": "Profile",
-    "link_configuracion": "Settings",
-    "link_configuracion2": "Settings",
-    "link_configuracion3": "Settings",
     "link_cerrar_sesion": "Log out",
     "link_cerrar_sesion2": "Log out",
     "link_cerrar_sesion3": "Log out",
@@ -22,7 +19,12 @@
     "proyect_desc": "Project description",
     "proyect_desctext": "UTCH Rutas is a platform designed to offer students an efficient solution to know the transportation schedules and routes to the Technological University of Chihuahua.",
     "frases2": "Phrases that inspired us",
-    "about2": "About us"
+    "about2": "About us",
+
+    "notrute1": "North Route 1",
+    "notrute2": "North Route 2",
+    "notrute3": "South route",
+    "notrute4": "South route departure"
   },
 
   "es": {
@@ -30,9 +32,6 @@
     "profile_link": "Perfil",
     "profile_link2": "Perfil",
     "profile_link3": "Perfil",
-    "link_configuracion": "Configuración",
-    "link_configuracion2": "Configuración",
-    "link_configuracion3": "Configuración",
     "link_cerrar_sesion": "Cerrar sesión",
     "link_cerrar_sesion2": "Cerrar sesión",
     "link_cerrar_sesion3": "Cerrar sesión",
