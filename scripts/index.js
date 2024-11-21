@@ -1,6 +1,10 @@
-const contenido = document.querySelector(".contenido");
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("/rutas")
+    const contenido = document.querySelector(".contenido");
+    const htmlElement = document.querySelector("html");
+
+    const lang = htmlElement.getAttribute("lang") || "es";
+
+    fetch(`/rutas?lang=${lang}`)
     .then(resultado => resultado.json())
     .then(info_rutas => {
         info_rutas.forEach(info_ruta => {
