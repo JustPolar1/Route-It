@@ -1,5 +1,52 @@
- {
-   "en" :{
-        
-    }
+{
+  "en": {
+    "tituloprincipal": "Main page",
+    "profile_link": "Profile",
+    "profile_link2": "Profile",
+    "profile_link3": "Profile",
+    "link_cerrar_sesion": "Log out",
+    "link_cerrar_sesion2": "Log out",
+    "link_cerrar_sesion3": "Log out",
+    "rutas_camiones": "BUS ROUTES",
+
+    "quejas": "Feedback",
+
+    "abouttitle": "About us",
+    "vision2": "Our vision",
+    "vision2text": "To be the main reference platform for student transportation, helping students reach their destinations quickly, safely and reliably.",
+    "mision2": "Our mision",
+    "mision2text": "Offer a high-quality service that allows students to access updated information on transportation routes and schedules, promoting an environment of inclusion and student support.",
+    "proyect_desc": "Project description",
+    "proyect_desctext": "UTCH Rutas is a platform designed to offer students an efficient solution to know the transportation schedules and routes to the Technological University of Chihuahua.",
+    "frases2": "Phrases that inspired us",
+    "about2": "About us",
+
+    "notrute1": "North Route 1",
+    "notrute2": "North Route 2",
+    "notrute3": "South route",
+    "notrute4": "South route departure"
+  },
+
+  "es": {
+    "tituloprincipal": "Página principal",
+    "profile_link": "Perfil",
+    "profile_link2": "Perfil",
+    "profile_link3": "Perfil",
+    "link_cerrar_sesion": "Cerrar sesión",
+    "link_cerrar_sesion2": "Cerrar sesión",
+    "link_cerrar_sesion3": "Cerrar sesión",
+    "rutas_camiones": "RUTAS DE CAMIONES",
+
+    "quejas": "Comentarios",
+
+    "abouttitle": "Sobre nosotros",
+    "vision2": "Nuestra Visión",
+    "vision2text": "Ser la principal plataforma de referencia para el transporte estudiantil, ayudando a los estudiantes a llegar a sus destinos de forma rápida, segura y confiable.",
+    "mision2": "Nuestra Misión",
+    "mision2text": "Ofrecer un servicio de alta calidad que permita a los estudiantes acceder a información actualizada sobre rutas y horarios de transporte, promoviendo un ambiente de inclusión y apoyo estudiantil.",
+    "proyect_desc": "Descripción del Proyecto",
+    "proyect_desctext": "UTCH Rutas es una plataforma diseñada para ofrecer a los estudiantes una solución eficiente para conocer los horarios y rutas de transporte hacia la Universidad Tecnológica de Chihuahua.",
+    "frases2": "Frases que nos Inspiran",
+    "about2": "Sobre nosotros"
+  }
 }

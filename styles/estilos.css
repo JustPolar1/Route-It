@@ -87,6 +87,7 @@ h1 {
     padding: 20px;
 }
 
+
 .rutas.desactivado {
     color: lightslategray;
 }
@@ -139,6 +140,9 @@ h1 {
         width: 65%;
     }
 }
+.more-content{ 
+    display: contents;
+}
 /* Estilos de inicio de sesión y del apartado de registro*/
 
 #lokeseaxd {
@@ -178,6 +182,8 @@ h1 {
 input[type="text"],
 input[type="password"], 
 input[type="email"],
+#organizaciones,
+#ruta,
 textarea,
 #baton {
     font-family: Arial, Helvetica, sans-serif;
@@ -217,4 +223,57 @@ a {
 
 textarea {
     resize: none;
+}
+
+
+/* Añadir un espacio entre secciones */
+section {
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*Todo lo que tenga que ver con perfil*/
+.perfil {
+    display: flex;
+    color: black;
+    background-color: white;
+    border-radius: 999px;
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    margin: 0;
+    gap: 20px;
+    align-items: center;
+}
+
+#foto img {
+    width: 80px;
+    border-radius: 100%;
+}
+
+.comentario {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    width: 70%;
+    padding: 20px;
+}
+
+.comentario h3 {
+    margin: 0;
+}
+
+.contenido {
+    margin-bottom: 90px;
+}
+
+.contenido #comentario {
+    margin: 10px;
+    color: #3f3f3f;
+    text-decoration:underline;
 }
