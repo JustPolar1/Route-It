@@ -51,12 +51,15 @@ document.addEventListener('DOMContentLoaded', () => {
             "proyect_desctext": ["#proyect_desctext"],
             "frases2": ["#frases2"],
             "about2": ["#about2"],
+            "about2_text": ["#about2_text"],
+            "ingreso": ["#ingreso"],
 
             "notrute1": ["#notrute1"],
             "notrute2": ["#notrute2"],
             "notrute3": ["#notrute3"],
-            "notrute4": ["#notrute4"]
-            
+            "notrute4": ["#notrute4"],
+            "interface": ["#interface"],
+            "entrar": ["#entrar"]
     };
         
 
@@ -68,25 +71,29 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Recursión para elementos anidados
                 Object.values(elementIds).forEach(subElementIds => {
                     if (Array.isArray(subElementIds)) {
-                        subElementIds.forEach(id => {
-                            const element = document.querySelector(id);
-                            if (element && translations[language] && translations[language][translationKey]) {
-                                element.textContent = translations[language][translationKey];
-                            } else {
-                                console.warn(`No se encontró el elemento o la traducción para ${translationKey}`);
-                            }
+                        subElementIds.forEach(selector => {
+                            const elements = document.querySelectorAll(selector); // Cambia a querySelectorAll
+                            elements.forEach(element => {
+                                if (translations[language] && translations[language][translationKey]) {
+                                    element.textContent = translations[language][translationKey];
+                                } else {
+                                    console.warn(`No se encontró el elemento o la traducción para ${translationKey}`);
+                                }
+                            });
                         });
                     }
                 });
             } else if (Array.isArray(elementIds)) {
                 // Si es un arreglo directo de selectores
-                elementIds.forEach(id => {
-                    const element = document.querySelector(id);
-                    if (element && translations[language] && translations[language][translationKey]) {
-                        element.textContent = translations[language][translationKey];
-                    } else {
-                        console.warn(`No se encontró el elemento o la traducción para ${translationKey}`);
-                    }
+                elementIds.forEach(selector => {
+                    const elements = document.querySelectorAll(selector); // Cambia a querySelectorAll
+                    elements.forEach(element => {
+                        if (translations[language] && translations[language][translationKey]) {
+                            element.textContent = translations[language][translationKey];
+                        } else {
+                            console.warn(`No se encontró el elemento o la traducción para ${translationKey}`);
+                        }
+                    });
                 });
             }
         }
