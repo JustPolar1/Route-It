@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Función que observa los elementos recién creados
     function observeElements() {
-        const elements = document.querySelectorAll("section, .perfil, .comentario, .info, .preview, .pildora_boton, .rutas, .rutas_info, .contenido");
+        const elements = document.querySelectorAll(".perfil, .comentario, .info, .preview, .pildora_boton, .rutas, .rutas_info, .contenido");
         elements.forEach(element => {
             observer.observe(element); // Observa los elementos
         });

@@ -4,6 +4,10 @@ body {
     background-color: lightgray;
 }
 
+option {
+    color: black;
+}
+
 .barra-superior {
     display: flex;
     align-items: center;

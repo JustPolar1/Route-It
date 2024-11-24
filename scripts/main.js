@@ -34,10 +34,11 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = "http://localhost:3000/pages/login.html"
     }
     */
-
-    toggleBtn.addEventListener('click', function() {
-        sidebar.classList.toggle('hidden'); // Alterna la visibilidad de la barra lateral
-    });
+    if (toggleBtn){
+        toggleBtn.addEventListener('click', function() {
+            sidebar.classList.toggle('hidden'); // Alterna la visibilidad de la barra lateral
+        });
+    }
 
     userButton.addEventListener('click', function(event) {
         event.stopPropagation(); // Prevenir que el evento se propague
