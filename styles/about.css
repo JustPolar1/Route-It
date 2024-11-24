@@ -165,3 +165,50 @@ blockquote {
         flex: 1;
     }
 }
+
+.contenido.nosotros {
+    max-width: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros-info h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.nosotros-info {
+    text-align: left;
+    width: auto;
+    min-height: 100%;
+}
+
+#nosotros {
+    max-width: 100%;
+    border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+    .contenido.nosotros {
+        flex-wrap: wrap;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .nosotros-info{
+        text-align: center;
+    }
+
+    #nosotros {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .pildora_boton {
+        width: 65%;
+    }
+}
