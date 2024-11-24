@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
                       boton.classList.add("pildora_boton");
     
                       const span = document.createElement("span");
-                      span.textContent = "Ver en el mapa";
+                      span.textContent = lang === "es" ? "Ver en el mapa": "See on the map";
     
                       const i = document.createElement("i");
                       i.classList.add("fa", "fa-arrow-circle-right");
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
                       rutas.append(mapa);
                   });
           } else {
-              ruta_preferida_fk_nombre.textContent = "Sin ruta preferida";
+              ruta_preferida_fk_nombre.textContent = lang === "es" ? "Sin ruta preferida" : "No favorite route";
               ruta_info.append(ruta_preferida_fk_nombre);
           }
       });
@@ -116,9 +116,8 @@ document.addEventListener("DOMContentLoaded", () => {
          */
     
         if (queja_info.length === 0){
-            console.log("hola");
             const titulo = document.createElement("h2");
-            titulo.textContent = "No has puesto ningún comentario";
+            titulo.textContent = lang === "es" ? "No has puesto ningún comentario" : "Had not submit any feedback";
     
             const divComentario = document.createElement("div");
             divComentario.classList.add("comentario");
@@ -157,7 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const enlace = document.createElement("a");
         enlace.href = "/queja"; // Establecer el atributo href
         enlace.id = "comentario"; // Establecer el id
-        enlace.textContent = "Poner un comentario"; // Establecer el texto del enlace
+        enlace.textContent = lang === "es" ? "Poner un comentario" : "Submit feedback"; // Establecer el texto del enlace
     
         // Añadir al contenido
         contenido.append(enlace);
