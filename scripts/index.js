@@ -40,15 +40,25 @@ document.addEventListener("DOMContentLoaded", () => {
             preview.classList.add("preview")
 
             const img = document.createElement("img");
-            img.setAttribute("src", "/assets/norte1.png");
-
-            preview.appendChild(img);
+            const ruta_imagen = info_ruta["ruta_imagen"];
+            if (ruta_imagen){
+                img.setAttribute("src", `/assets/${ruta_imagen}`);
+                preview.appendChild(img);
+            }
 
             const descripcion_ruta = document.createElement("p");
             const nombre_ruta = document.createElement("h2");
 
             nombre_ruta.textContent = info_ruta["ruta_nombre"];
             descripcion_ruta.textContent = info_ruta["ruta_descripcion"];
+            if (info_ruta["ruta_precio"]){
+                var tarifa = document.createElement("p");
+                tarifa.textContent = lang === "es" ? `Esta ruta cuenta con una tarifa de: ${info_ruta["ruta_precio"]} pesos` : `This route has a fee of: ${info_ruta["ruta_precio"]} mxn`;
+            } else {
+                var tarifa = document.createElement("p");
+                tarifa.textContent = "";
+            }
+
             // Aquí van guardados las paradas
             const p = document.createElement("p");
             p.textContent = lang === "es" ? "Lista de paradas populares:" : "Popular bus stops:";
@@ -70,9 +80,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (!info_ruta["ruta_estatus"]){
                 rutas.classList.add("desactivado");
+                nombre_ruta.textContent += lang === "es" ? " (Actualmente desactivada)" : " (Currently inactive)";
             }
 
-            ruta_info.append(nombre_ruta, descripcion_ruta, p, ol);
+            ruta_info.append(nombre_ruta, descripcion_ruta, tarifa, p, ol);
 
             info.appendChild(ruta_info);
             info.appendChild(preview);
