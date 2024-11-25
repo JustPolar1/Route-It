@@ -9,6 +9,7 @@
     "link_cerrar_sesion3": "Log out",
     "rutas_camiones": "BUS ROUTES",
 
+    "rutas-nombre": "Routes",
     "quejas": "Feedback",
 
     "abouttitle": "About us",
@@ -33,17 +34,18 @@
     "frase1": "“Education is the passport to the future, tomorrow belongs to those who prepare for it today.”",
     "frase2": "“Transportation is the connection between effort and opportunity.”"
   },
-
+  
   "es": {
-    "tituloprincipal": "Página principal",
-    "profile_link": "Perfil",
-    "profile_link2": "Perfil",
-    "profile_link3": "Perfil",
-    "link_cerrar_sesion": "Cerrar sesión",
-    "link_cerrar_sesion2": "Cerrar sesión",
-    "link_cerrar_sesion3": "Cerrar sesión",
-    "rutas_camiones": "RUTAS DE CAMIONES",
-
+      "tituloprincipal": "Página principal",
+      "profile_link": "Perfil",
+      "profile_link2": "Perfil",
+      "profile_link3": "Perfil",
+      "link_cerrar_sesion": "Cerrar sesión",
+      "link_cerrar_sesion2": "Cerrar sesión",
+      "link_cerrar_sesion3": "Cerrar sesión",
+      "rutas_camiones": "RUTAS DE CAMIONES",
+      
+    "rutas-nombre": "Rutas",
     "quejas": "Comentarios",
 
     "abouttitle": "Sobre nosotros",
@@ -62,5 +64,5 @@
 
     "frase1": "“La educación es el pasaporte hacia el futuro, el mañana pertenece a aquellos que se preparan para él hoy.”",
     "frase2": "“El transporte es la conexión entre el esfuerzo y la oportunidad.”"
-  }
+}
 }
