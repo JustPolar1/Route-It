@@ -172,7 +172,7 @@ h1 {
     text-align: center;
 }
 
-#titulo {
+.titulo {
     margin-bottom: 20px;
     font-size: 24px;
     color:#0041F5;

@@ -32,7 +32,13 @@
     "notrute4": "South route departure",
 
     "frase1": "“Education is the passport to the future, tomorrow belongs to those who prepare for it today.”",
-    "frase2": "“Transportation is the connection between effort and opportunity.”"
+    "frase2": "“Transportation is the connection between effort and opportunity.”",
+
+    "titulo": "Account activation",
+    "alertregistro": "You're almost ready, we just need the following to activate your account",
+    "escname": "Write your name", 
+    "selectorg": "Select your organization:", 
+    "baton": "Send" 
   },
   
   "es": {
@@ -63,6 +69,12 @@
     "interface": "Interfaz gráfica amigable y minimalista",
 
     "frase1": "“La educación es el pasaporte hacia el futuro, el mañana pertenece a aquellos que se preparan para él hoy.”",
-    "frase2": "“El transporte es la conexión entre el esfuerzo y la oportunidad.”"
-}
+    "frase2": "“El transporte es la conexión entre el esfuerzo y la oportunidad.”",
+
+    "titulo": "Activación de cuenta",
+    "alertregistro": "Ya casi estás listo, solo necesitamos lo siguiente para activar tu cuenta",
+    "escname": "Escribe tu nombre", 
+    "selectorg": "Selecciona tu organización:", 
+    "baton": "Enviar" 
+  }
 }
