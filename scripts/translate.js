@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "link_cerrar_sesion2": ["#link_cerrar_sesion2"],
         
             "quejas": ["#quejas"],
+            "rutas-nombre": ["#rutas-nombre"],
 
             "abouttitle": ["#abouttitle"],
             "vision2": ["#vision2"],

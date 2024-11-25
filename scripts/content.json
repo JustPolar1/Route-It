@@ -9,6 +9,7 @@
     "link_cerrar_sesion3": "Log out",
     "rutas_camiones": "BUS ROUTES",
 
+    "rutas-nombre": "Routes",
     "quejas": "Feedback",
 
     "abouttitle": "About us",
@@ -56,17 +57,18 @@
     "regist": "Registration",
     "register2": "Sign up"
   },
-
+  
   "es": {
-    "tituloprincipal": "Página principal",
-    "profile_link": "Perfil",
-    "profile_link2": "Perfil",
-    "profile_link3": "Perfil",
-    "link_cerrar_sesion": "Cerrar sesión",
-    "link_cerrar_sesion2": "Cerrar sesión",
-    "link_cerrar_sesion3": "Cerrar sesión",
-    "rutas_camiones": "RUTAS DE CAMIONES",
-
+      "tituloprincipal": "Página principal",
+      "profile_link": "Perfil",
+      "profile_link2": "Perfil",
+      "profile_link3": "Perfil",
+      "link_cerrar_sesion": "Cerrar sesión",
+      "link_cerrar_sesion2": "Cerrar sesión",
+      "link_cerrar_sesion3": "Cerrar sesión",
+      "rutas_camiones": "RUTAS DE CAMIONES",
+      
+    "rutas-nombre": "Rutas",
     "quejas": "Comentarios",
 
     "abouttitle": "Sobre nosotros",
