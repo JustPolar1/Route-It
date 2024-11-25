@@ -85,6 +85,8 @@ document.addEventListener('DOMContentLoaded', () => {
             "rutadir": ["#rutadir"],
             "descrep": ["#descrep"],
 
+            "miqeja": ["#miqeja"],
+
     };
         
 

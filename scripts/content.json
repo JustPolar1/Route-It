@@ -55,7 +55,8 @@
     "descrep": "Describe your complaint respectfully:",
 
     "regist": "Registration",
-    "register2": "Sign up"
+    "register2": "Sign up",
+    "miqeja": "My complaint..."
   },
   
   "es": {
@@ -109,6 +110,8 @@
     "descrep": "Describe tu queja con respeto:",
 
     "regist": "Registro",
-    "register2": "Regístrate"
+    "register2": "Regístrate",
+
+    "miqeja": "Mi queja..."
   }
 }
