@@ -28,7 +28,10 @@
     "notrute1": "North Route 1",
     "notrute2": "North Route 2",
     "notrute3": "South route",
-    "notrute4": "South route departure"
+    "notrute4": "South route departure",
+
+    "frase1": "“Education is the passport to the future, tomorrow belongs to those who prepare for it today.”",
+    "frase2": "“Transportation is the connection between effort and opportunity.”"
   },
 
   "es": {
@@ -55,6 +58,9 @@
     "about2_text": "Somos un grupo de estudiantes comprometidos de la Universidad Tecnológica de Chihuahua, apasionados por la tecnología y el bienestar estudiantil. Nuestra meta es apoyar a nuestros compañeros con soluciones digitales innovadoras que mejoren su vida académica.",
     "ingreso": "Ingresar",
     "entrar": "¡Entra a la página ahora!",
-    "interface": "Interfaz gráfica amigable y minimalista"
+    "interface": "Interfaz gráfica amigable y minimalista",
+
+    "frase1": "“La educación es el pasaporte hacia el futuro, el mañana pertenece a aquellos que se preparan para él hoy.”",
+    "frase2": "“El transporte es la conexión entre el esfuerzo y la oportunidad.”"
   }
 }

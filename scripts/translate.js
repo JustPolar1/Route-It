@@ -59,7 +59,10 @@ document.addEventListener('DOMContentLoaded', () => {
             "notrute3": ["#notrute3"],
             "notrute4": ["#notrute4"],
             "interface": ["#interface"],
-            "entrar": ["#entrar"]
+            "entrar": ["#entrar"],
+
+            "frase1": ["#frase1"],
+            "frase2": ["#frase2"]
     };
         
 
