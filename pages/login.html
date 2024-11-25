@@ -35,20 +35,20 @@
         </nav>
 
         <div class="inicio">
-            <h2 class="titulo">Inicio de Sesión</h2>
-            <p>Bienvenido(a) a Rutas UTCH</p>
+            <h2 class="titulo" id="titulologin">Inicio de Sesión</h2>
+            <p id="parrafobienb">Bienvenido(a) a Route-it</p>
             <form id="login" action="/auth/login" method="post">
                 <input type="email" id="username" name="email" placeholder="Email" required>
                 <input type="password" id="password" name="password" placeholder="Contraseña" required>
-                <button id="baton" type="submit">Entrar</button>
+                <button class="baton" id="entrarbuton" type="submit">Entrar</button>
             </form>
 
             <div class="registrarse">
-                <p>¿No tienes cuenta? <a href="/pages/register.html">Regístrate aquí</a></p>
+                <p id="parrafnoac">¿No tienes cuenta? <a href="/pages/register.html" id="register">Regístrate aquí</a></p>
             </div>
         
             <div class="contra">
-                <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+                <p><a href="#" id="nocont">¿Olvidaste tu contraseña?</a></p>
             </div>
         </div>
     </body>

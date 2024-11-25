@@ -26,7 +26,7 @@
                                 <li>
                                     <select class="pildora" id="languageSwitcher">
                                         <option value="es" >Español</option>
-                                        <option value="en" >Inglés</option>
+                                        <option value="en" >English</option>
                                     </select>
                                 </li>
                                 <li>
@@ -47,15 +47,15 @@
         </nav>  
         <div class="inicio">
             <form action="/queja" method="post">
-                <h2 id="titulo">Quejas</h2>
-                <label>Ruta a la que va dirigida la queja</label>
+                <h2 class="titulo" id="quejast">Quejas</h2>
+                <label id="rutadir">Ruta a la que va dirigida la queja</label>
                 <select id="ruta" name="ruta_id" placeholder="Ruta..." required>
 
                 </select>
 
-                <label>Describe tu queja con respeto:</label>
+                <label id="descrep">Describe tu queja con respeto:</label>
                 <textarea name="comentario" required rows="7" placeholder="Mi queja..."></textarea>
-                <button id="baton" type="submit">Enviar</button>
+                <button class="baton" type="submit" id="botonsend">Enviar</button>
             </form>
         </div>
 

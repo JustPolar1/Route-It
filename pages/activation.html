@@ -23,14 +23,14 @@
 
         <div class="inicio">
             <form id="register_form" action="/activation" method="post">
-                <h2 class="titulo" >Activación de cuenta</h2>
+                <h2 class="titulo"  id="tituloact">Activación de cuenta</h2>
                 <p id="alertregistro">Ya casi estás listo, solo necesitamos lo siguiente para activar tu cuenta</p>
                 <label id="escname">Escribe tu nombre</label>
                 <input name="nombre" type="text" placeholder="Nombre" required>
                 <label id="selectorg">Selecciona tu organización:</label>
                 <select name="organizacion" id="organizaciones" required>
                 </select>
-                <button id="baton" type="submit">Enviar</button>
+                <button class="baton" type="submit" id="botonsend">Enviar</button>
 
             </form>
         </div>
