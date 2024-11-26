@@ -7,6 +7,10 @@
     justify-content: space-between;
 }
 
+#fondo {
+    background-image: radial-gradient(#009bf59c 1%, #22222200 75%);
+}
+
 .indices-der {
     gap: 25px;
     align-items: center;
