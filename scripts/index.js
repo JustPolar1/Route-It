@@ -51,13 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
             nombre_ruta.textContent = info_ruta["ruta_nombre"];
             descripcion_ruta.textContent = info_ruta["ruta_descripcion"];
-            if (info_ruta["ruta_precio"]){
-                var tarifa = document.createElement("p");
-                tarifa.textContent = lang === "es" ? `Esta ruta cuenta con una tarifa de: ${info_ruta["ruta_precio"]} pesos` : `This route has a fee of: ${info_ruta["ruta_precio"]} mxn`;
-            } else {
-                var tarifa = document.createElement("p");
-                tarifa.textContent = "";
-            }
 
             // Aquí van guardados las paradas
             const p = document.createElement("p");
@@ -83,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 nombre_ruta.textContent += lang === "es" ? " (Actualmente desactivada)" : " (Currently inactive)";
             }
 
-            ruta_info.append(nombre_ruta, descripcion_ruta, tarifa, p, ol);
+            ruta_info.append(nombre_ruta, descripcion_ruta, p, ol);
 
             info.appendChild(ruta_info);
             info.appendChild(preview);

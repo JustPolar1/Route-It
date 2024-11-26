@@ -4,6 +4,10 @@ body {
     background-color: lightgray;
 }
 
+p {
+    white-space: pre-line
+}
+
 option {
     color: black;
 }
