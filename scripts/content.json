@@ -26,8 +26,8 @@
     "entrar": "¡Enter the website now!",
     "interface": "Minimalistic and friendly graphical interface",
 
-    "notrute1": "North Route 1",
-    "notrute2": "North Route 2",
+    "notrute1": "North route 1",
+    "notrute2": "North route 2",
     "notrute3": "South route",
     "notrute4": "South route departure",
 
@@ -74,7 +74,7 @@
     "abouttitle": "Sobre nosotros",
     "vision2": "Nuestra Visión",
     "vision2text": "Ser la principal plataforma de referencia para el transporte particular, ayudando a los usuarios a llegar a sus destinos de forma rápida, segura y confiable.",
-    "mision2": "Nuestra Misión",
+    "mision2": "Nuestra misión",
     "mision2text": "Ofrecer un servicio de alta calidad que permita a los usuarios acceder a información actualizada sobre rutas y horarios de transporte, promoviendo un ambiente de inclusión y apoyo.",
     "proyect_desc": "¿Qué es Route-It?",
     "proyect_desctext": "Route-It es una plataforma diseñada para ofrecer a los usuarios una solución eficiente para conocer los horarios y rutas de transporte particular de cualquier organización.",
@@ -94,8 +94,8 @@
     "selectorg": "Selecciona tu organización:", 
     "botonsend": "Enviar" ,
 
-    "titulologin": "Inicio de Sesión",
-    "parrafobienb": "Bienvenido(a) a Route-it",
+    "titulologin": "Inicio de sesión",
+    "parrafobienb": "Bienvenido(a) a Route-It",
     "entrarbuton": "Entrar",
     "parrafnoac": "¿No tienes cuenta?",
     "register": "Regístrate aquí",
