@@ -77,16 +77,15 @@ document.addEventListener('DOMContentLoaded', () => {
             "parrafnoac": ["#parrafonoac"],
             "register": ["#register"],
             "nocont": ["#nocont"],
+            "regist": ["#regist"],
+            "register2": ["#register2"],
 
             "rutafav": ["#rutafav"],
             "comentarios": ["#comentarios"],
 
             "quejast": ["#quejast"],
             "rutadir": ["#rutadir"],
-            "descrep": ["#descrep"],
-
-            "miqeja": ["#miqeja"],
-
+            "descrep": ["#descrep"]
     };
         
 
