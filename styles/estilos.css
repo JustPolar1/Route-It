@@ -196,7 +196,7 @@ textarea,
     resize: none;
 }
 
-#baton {
+.baton {
     background-color: #0900ba;
     color: white;
     cursor: pointer;

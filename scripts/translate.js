@@ -63,7 +63,30 @@ document.addEventListener('DOMContentLoaded', () => {
             "entrar": ["#entrar"],
 
             "frase1": ["#frase1"],
-            "frase2": ["#frase2"]
+            "frase2": ["#frase2"],
+
+            "tituloact": ["#tituloact"],
+            "alertregistro": ["#alertregistro"],
+            "escname": ["#escname"], 
+            "selectorg": ["#selectorg"], 
+            "botonsend": ["#botonsend"],
+
+            "titulologin": ["#titulologin"],
+            "parrafobienb": ["#parrafobienb"],
+            "entrarbuton": ["#entrarbuton"],
+            "parrafnoac": ["#parrafonoac"],
+            "register": ["#register"],
+            "nocont": ["#nocont"],
+
+            "rutafav": ["#rutafav"],
+            "comentarios": ["#comentarios"],
+
+            "quejast": ["#quejast"],
+            "rutadir": ["#rutadir"],
+            "descrep": ["#descrep"],
+
+            "miqeja": ["#miqeja"],
+
     };
         
 

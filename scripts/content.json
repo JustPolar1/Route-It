@@ -34,11 +34,29 @@
     "frase1": "“Education is the passport to the future, tomorrow belongs to those who prepare for it today.”",
     "frase2": "“Transportation is the connection between effort and opportunity.”",
 
-    "titulo": "Account activation",
+    "tituloact": "Account activation",
     "alertregistro": "You're almost ready, we just need the following to activate your account",
     "escname": "Write your name", 
     "selectorg": "Select your organization:", 
-    "baton": "Send" 
+    "botonsend": "Send",
+
+    "titulologin": "Log in",
+    "parrafobienb": "Welcome to Route-it",
+    "entrarbuton": "Enter",
+    "parrafnoac": "Don't have an account?",
+    "register": "Register here",
+    "nocont": "Forgot your password?",
+
+    "rutafav": "Preferred Route",
+    "comentarios": "Your comments",
+
+    "quejast": "Complaints",
+    "rutadir": "Route to which the complaint is directed",
+    "descrep": "Describe your complaint respectfully:",
+
+    "regist": "Registration",
+    "register2": "Sign up",
+    "miqeja": "My complaint..."
   },
   
   "es": {
@@ -71,10 +89,29 @@
     "frase1": "“La educación es el pasaporte hacia el futuro, el mañana pertenece a aquellos que se preparan para él hoy.”",
     "frase2": "“El transporte es la conexión entre el esfuerzo y la oportunidad.”",
 
-    "titulo": "Activación de cuenta",
+    "tituloact": "Activación de cuenta",
     "alertregistro": "Ya casi estás listo, solo necesitamos lo siguiente para activar tu cuenta",
     "escname": "Escribe tu nombre", 
     "selectorg": "Selecciona tu organización:", 
-    "baton": "Enviar" 
+    "botonsend": "Enviar" ,
+
+    "titulologin": "Inicio de Sesión",
+    "parrafobienb": "Bienvenido(a) a Route-it",
+    "entrarbuton": "Entrar",
+    "parrafnoac": "¿No tienes cuenta?",
+    "register": "Regístrate aquí",
+    "nocont": "¿Olvidaste tu contraseña?",
+
+    "rutafav": "Ruta Preferida",
+    "comentarios": "Tus comentarios",
+
+    "quejast": "Quejas",
+    "rutadir": "Ruta a la que va dirigida la queja",
+    "descrep": "Describe tu queja con respeto:",
+
+    "regist": "Registro",
+    "register2": "Regístrate",
+
+    "miqeja": "Mi queja..."
   }
 }
