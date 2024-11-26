@@ -2,35 +2,50 @@
 <html lang="es">
     <head> <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Sobre nosotros</title>
+        <link href="/styles/main.css" rel="stylesheet">
         <link href="/styles/estilos.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">    
     </head>
 
-    <body>
+    <body style="position: static;">
+        <nav>
+            <div class="barra-superior" style="position: relative;">
+                <ul class="indices-izq">
+                    <li><a href="javascript:void(0);" id="toggle-btn"><i style="display: none;" class="fas fa-bars"></i></a></li>
+                </ul>
+                <h1><a href="/">UTCH Rutas</a></h1>
+                <ul class="indices-der">
+                    <li id="usuario">
+                        <a href="javascript:void(0);"><i class="fas fa-cog"></i></a>
+                        <div class="menu_desplegable" id="menu">
+                            <ul>
+                                <li>
+                                    <select class="pildora" id="languageSwitcher">Cambiar idioma
+                                        <option value="es" class="esp">Español</option>
+                                        <option value="en" class="eng">Inglés</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>     
+            </div>
+        </nav>
         <div class="container">
-
-        <div id="divtitulo">
-            <h1>UTCH Rutas</h1>
-            <link rel="stylesheet" href="/pages/login.html">
-        </div>
-
-       <div class="general">
-        <h2>NUESTRA VISION</h2>
-        </div>
 
         <section id="descripcion">
             <h2>Descripción del Proyecto</h2>
             <p>UTCH Rutas es una plataforma diseñada para ofrecer a los estudiantes una solución eficiente para conocer los horarios y rutas de transporte hacia la Universidad Tecnológica de Chihuahua.</p>
         </section>
 
-        <section id="vision">
-            <h2>Nuestra Visión</h2>
-            <p>Ser la principal plataforma de referencia para el transporte estudiantil, ayudando a los estudiantes a llegar a sus destinos de forma rápida, segura y confiable.</p>
-        </section>
-
         <section id="mision">
             <h2>Nuestra Misión</h2>
             <p>Ofrecer un servicio de alta calidad que permita a los estudiantes acceder a información actualizada sobre rutas y horarios de transporte, promoviendo un ambiente de inclusión y apoyo estudiantil.</p>
+        </section>
+
+        <section id="vision">
+            <h2>Nuestra Visión</h2>
+            <p>Ser la principal plataforma de referencia para el transporte estudiantil, ayudando a los estudiantes a llegar a sus destinos de forma rápida, segura y confiable.</p>
         </section>
 
         <section id="frases">
@@ -44,27 +59,14 @@
             <p>Somos un grupo de estudiantes comprometidos de la Universidad Tecnológica de Chihuahua, apasionados por la tecnología y el bienestar estudiantil. Nuestra meta es apoyar a nuestros compañeros con soluciones digitales innovadoras que mejoren su vida académica.</p>
         </section>
 
-         <!-- Ejemplo de contenido adicional para probar el scroll -->
-        <section id="descripcion">
-            <h2>Descripción del Proyecto</h2>
-            <p>Contenido de prueba...</p>
-        </section>
-    
-            <!-- Puedes añadir más contenido aquí para probar el desplazamiento -->
-        <section id="descripcion">
-            <h2>Descripción del Proyecto</h2>
-            <p>Contenido adicional para probar la animación y scroll.</p>
-        </section>
-
-
             <p>EN CONSTRUCCION !!!!</p>
             <img src="https://www.mbaginecologo.com/pc.jpg">
 
-            <button id="ingreso"><a href="/pages/login.html"> Igresar a la pagina</a></button>
+            <button id="ingreso"><a href="/pages/login.html"> Ingresar a la pagina</a></button>
         </div>
 
         <script src="/scripts/animation.js"></script>
-
+        <script src="/scripts/main.js"></script>
     </body>
     
 </html>

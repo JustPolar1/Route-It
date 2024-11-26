@@ -1,23 +1,25 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const elements = document.querySelectorAll("section, div"); // Selecciona elementos a animar
+// Función que activa las animaciones cuando una sección es visible
+function activarAnimacion() {
+    const sections = document.querySelectorAll("section");
 
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Añadir la clase de animación cuando el elemento entra en la vista
-                entry.target.classList.add("fade-in");
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
 
-                // Quitar la clase cuando la animación termine, para permitir que se reactive
-                entry.target.addEventListener("animationend", () => {
-                    entry.target.classList.remove("fade-in");
-                });
-            }
-        });
-    }, {
-        threshold: 0.1 // Activa la animación cuando el 10% del elemento es visible
+        // Si la sección es visible, añadir la clase 'fade-in'
+        if (isVisible) {
+            section.classList.add("fade-in");
+
+            // Quitar la clase después de la animación para que pueda repetirse
+            section.addEventListener("animationend", () => {
+                section.classList.remove("fade-in");
+            });
+        }
     });
+}
 
-    elements.forEach(element => {
-        observer.observe(element);
-    });
-});
+// Escuchar el evento scroll para activar la función
+window.addEventListener("scroll", activarAnimacion);
+
+// Llamar a la función al cargar la página para activar animaciones visibles
+activarAnimacion();

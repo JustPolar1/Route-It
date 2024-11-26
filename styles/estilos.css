@@ -275,23 +275,23 @@ textarea {
 
 /* Clase que activa la animación */
 .fade-in {
-    opacity: 0;
-    animation: fadeInUp 1s ease forwards;
+    opacity: 0; /* Comienza invisible */
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease forwards; /* Duración y suavizado */
 }
 
-/* Estilos opcionales para las secciones y divs */
-section, div {
+.fade-in.visible {
+    opacity: 1; /* Aparece */
+    transform: translateY(0); /* Se mueve a su posición final */
+}
+
+/* Añadir un espacio entre secciones */
+section {
     margin-bottom: 50px;
     padding: 20px;
     border-radius: 8px;
     background-color: #f9f9f9;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-
-
-
-
-
 
 
